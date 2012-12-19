@@ -1,0 +1,238 @@
+/* Quick Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,a,img,ol,ul,li,table,caption,tbody,tfoot,thead,tr,th,td,fieldset,input,dl,dt,dd {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+:focus { outline: 0; }
+ul { list-style: none; }
+table { border-collapse: separate; border-spacing: 0; clear: both; }
+::-moz-selection { background: #BAC0D6; color: #1C2856; text-shadow: none; }
+::selection { background: #BAC0D6; color: #1C2856; text-shadow: none; }
+html { overflow-y: scroll; }
+html { overflow-x: hidden; }
+input[type=submit],label,select,.sortable th { cursor: pointer; } 
+input[type=checkbox], .checkbox { width: auto !important; }
+
+/* HTML5 Block Elements */
+article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* Simple Classes */
+
+.clear { clear: both; }
+.clearleft { clear: left; }
+.floatright { float: right; }
+.floatleft { float: left; }
+.hidden { display: none; }
+.textleft { text-align: left; }
+.textright { text-align: right; }
+.textcenter { text-align: center; }
+.hidden { display: none !important; }
+
+/* LESS Mixins */
+
+.rounded(@radius: 2px) {
+	        border-radius: @radius;
+	-webkit-border-radius: @radius;
+	   -moz-border-radius: @radius;
+	   
+	        background-clip: padding-box; 
+	-webkit-background-clip: padding-box; 
+	   -moz-background-clip: padding; 
+}
+.border-radius(@topleft: 0, @topright: 0, @bottomright: 0, @bottomleft: 0) {
+            border-top-left-radius: @topleft;
+	-webkit-border-top-left-radius: @topleft;
+        -moz-border-radius-topleft: @topleft;
+		
+	        border-top-right-radius: @topright;
+	-webkit-border-top-right-radius: @topright;
+	    -moz-border-radius-topright: @topright;
+  
+	        border-bottom-right-radius: @bottomright;
+	-webkit-border-bottom-right-radius: @bottomright;
+	     -moz-border-radius-bottomleft: @bottomleft;
+  
+	        border-bottom-left-radius: @bottomleft;
+	-webkit-border-bottom-left-radius: @bottomleft;
+	   -moz-border-radius-bottomright: @bottomright;
+	   
+	        background-clip: padding-box; 
+	-webkit-background-clip: padding-box; 
+	   -moz-background-clip: padding; 
+}
+
+.transition-duration(@duration: 0.2s) {
+            transition-duration: @duration;
+	-webkit-transition-duration: @duration;
+       -moz-transition-duration: @duration;
+}
+
+
+.drop-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
+	        box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+	-webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+	   -moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+}
+.box-shadow (@shadow1, @shadow2: transparent 0 0 0 ) {
+		    box-shadow: @shadow1, @shadow2;
+    -webkit-box-shadow: @shadow1, @shadow2;
+       -moz-box-shadow: @shadow1, @shadow2;
+}
+.rounded-table(@table_radius: 3px) {
+	th {
+		&:first-child { .border-radius(@table_radius, 0, 0, 0); }
+		&:last-child { .border-radius(0, @table_radius, 0, 0); }
+		&:only-child { .border-radius(@table_radius, @table_radius, 0, 0); }
+	}
+	tr:last-child {
+		td:first-child { .border-radius(0, 0, 0, @table_radius); }
+		td:last-child { .border-radius(0, 0, @table_radius, 0); }
+		td:only-child { .border-radius(0, 0, @table_radius, @table_radius); }
+	}
+}
+.zebra-stripe(@stripe_color: #F0F0F0) {
+	tbody tr:nth-child(2n+1) { background: @stripe_color; }
+}
+.border-box() {
+            box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+}
+
+
+/*--------My Custom Classes--------*/
+
+.border-radius(@radius: 6px) {
+  border-radius: @radius;
+  -webkit-border-radius : @radius;
+  -moz-border-radius: @radius;
+  -khtml-border-radius: @radius;
+  -o-border-radius: @radius;
+  -moz-background-clip: padding; 
+  -webkit-background-clip: padding-box; 
+  background-clip: padding-box;
+}
+.box-shadow (@x: 0px, @y: 0px, @blur: 12px, @alpha: 0.25){
+  @arguments: @x @y @blur rgba(0, 0, 0, @alpha);
+  box-shadow:         @arguments;
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow:    @arguments;	
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+}
+.box-shadow (@shadow1, @shadow2: transparent 0 0 0 ) {
+            box-shadow: @shadow1, @shadow2;
+    -webkit-box-shadow: @shadow1, @shadow2;
+       -moz-box-shadow: @shadow1, @shadow2;
+}
+
+.box-sizing{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+.transition (@properties: all 1s linear) {
+    -webkit-transition: @properties;
+    -moz-transition: @properties;
+    -o-transition: @properties;
+    -ms-transition: @properties;
+    transition: @properties;
+}
+
+
+.transform-transition (@time: 1s, @ease: linear) {
+    -webkit-transition: -webkit-transform @time @ease;
+    -moz-transition: -moz-transform @time @ease;
+    -o-transition: -o-transform @time @ease;
+    -ms-transition: -ms-transform @time @ease;
+    transition: transform @time @ease;
+}
+.opacity(@opacity: 0.85){
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=@opacity*100)";
+        filter: alpha(opacity=@opacity);     
+		-moz-opacity:@opacity;
+        -khtml-opacity: @opacity;
+        opacity: @opacity;		
+}
+.inner-shadow (@x: 0px, @y: 0px, @blur: 10px, @hex:0, @alpha: 0.30){
+	@val: inset @x @y @blur rgba(@hex,@hex,@hex,@alpha);
+	box-shadow:@val;
+	-moz-box-shadow:@val;
+	-webkit-box-shadow: @val;  	
+}
+.transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+    -webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+    background-color: @start;
+    background-image: -webkit-linear-gradient(@origin, @start, @stop);
+    background-image: -moz-linear-gradient(@origin, @start, @stop);
+    background-image: -o-linear-gradient(@origin, @start, @stop);
+    background-image: -ms-linear-gradient(@origin, @start, @stop);
+    background-image: linear-gradient(@origin, @start, @stop);
+}
+// Transformations //
+.skew(@angle_x:35deg, @angle_y:0deg)
+{
+	-webkit-transform: skew(@angle_x, @angle_y);
+	-moz-transform: skew(@angle_x, @angle_y);
+	-o-transform: skew(@angle_x, @angle_y);
+	-ms-transform: skew(@angle_x, @angle_y);
+	transform: skew(@angle_x, @angle_y);
+}
+
+.scale(@scale_x: 1)
+{
+	-webkit-transform: scale(@scale_x);
+	-moz-transform: scale(@scale_x);
+	-o-transform: scale(@scale_x);
+	-ms-transform: scale(@scale_x);
+	transform: scale(@scale_x);
+}
+.rotate(@deg:35deg)
+{
+	-webkit-transform: rotate(@deg);
+	-moz-transform: rotate(@deg);
+	-o-transform: rotate(@deg);
+	-ms-transform: rotate(@deg);
+	transform: rotate(@deg);
+}
+.translate(@move_x: 10px, @move_y: 10px)
+{
+	-webkit-transform: translate(@move_x, @move_y);
+	-moz-transform: translate(@move_x, @move_y);
+	-o-transform: translate(@move_x, @move_y);
+	-ms-transform:translate(@move_x, @move_y);
+	transform: translate(@move_x, @move_y);
+}
+.shine(){
+	content: "";position: absolute;clear:both;left: 0;top: -50%;z-index: 9999;
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%);
+	background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%);
+	width: 100%;height: 100%;
+}
+
+
+
+
+
+
+
+
+
+

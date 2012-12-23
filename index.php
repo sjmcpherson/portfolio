@@ -1,8 +1,9 @@
 <?php
 session_start();
+ echo $_SERVER['SERVER_SOFTWARE'];
  ?>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 
@@ -22,6 +23,7 @@ session_start();
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link href="css/zgo8syp-d.css" rel="stylesheet">
 <link href="css/fdb0guo-d.css" rel="stylesheet">
+
 <link rel="stylesheet/less" type="text/css" href="css/style.less">
 
 <!--<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>-->
@@ -253,7 +255,17 @@ session_start();
 			<div class="form half">                               
                                <h2>Contact Form</h2>
                                <hr class="light">
+
 								<?php
+									require "php-includes/lessc.inc.php";
+									try {
+								  $less->compile("invalid LESS } {");
+								} catch (exception $e) {
+								  echo "fatal error: " . $e->getMessage();
+								}
+
+								
+								
                                 //init variables
                                 $cf = array();
                                 $sr = false;

@@ -1,6 +1,6 @@
 <?php
 session_start();
- echo $_SERVER['SERVER_SOFTWARE'];
+	date_default_timezone_set('Pacific/Auckland');
  ?>
 
 <!DOCTYPE html>
@@ -256,15 +256,7 @@ session_start();
                                <h2>Contact Form</h2>
                                <hr class="light">
 
-								<?php
-									require "php-includes/lessc.inc.php";
-									try {
-								  $less->compile("invalid LESS } {");
-								} catch (exception $e) {
-								  echo "fatal error: " . $e->getMessage();
-								}
-
-								
+								<?php						
 								
                                 //init variables
                                 $cf = array();
@@ -275,7 +267,7 @@ session_start();
                                     $sr = true;
                                 }
                                 ?>
-                                <ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
+                                <ul id="errors" class="forminfo <?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
                                     <li id="info">There were some problems with your form submission:</li>
                                     <?php 
                                     if(isset($cf['errors']) && count($cf['errors']) > 0) :
@@ -287,14 +279,14 @@ session_start();
                                     endif;
                                     ?>
                                 </ul>
-                                <p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message! We will get back to you ASAP</p>
-                               <form id="contact-form" method="post" action="process.php">
+                                <h4 id="success" class="forminfo<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message! We will get back to you ASAP</h4>
+                               <form id="cform" class="cform" method="post" action="process.php">
                                <label for="name"><span>*</span>Name:</label><input type="text" name="name" required id="name" placeholder="your name">                               
                                <label for="email"><span>*</span>Email:</label><input type="email" name="email" required id="email" placeholder="your email">
                                <label for="phone">Phone:</label><input type="text" name="phone" id="phone" placeholder="your phone number">
                                <label for="business">Business:</label><input type="text" name="business" id="business" placeholder="name of your business">
                                <label for="message"><span>*</span>Message:</label><textarea required id="message" name="message" placeholder="your message"></textarea>
-                               <input name="submit" id="submit" type="submit" value="send message" />
+                               <button type="submit" id="submit" class="button"  form="contact-form" value="send message">send message</button> 
                                </form>
            </div>
 <!-- InstanceEndEditable -->

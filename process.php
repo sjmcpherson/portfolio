@@ -7,14 +7,15 @@ if( isset($_POST) ){
 	
 	//sumbission data
 	$ipaddress = $_SERVER['REMOTE_ADDR'];
+	date_default_timezone_set('Pacific/Auckland');
 	$date = date('d/m/Y');
 	$time = date('H:i:s');
 	
 	//form data
 	$name = $_POST['name'];	
 	$email = $_POST['email'];
-	$telephone = $_POST['telephone'];
-	$enquiry = $_POST['enquiry'];
+	$phone = $_POST['phone'];
+	$business = $_POST['business'];
 	$message = $_POST['message'];
 	
 	//validate form data
@@ -24,7 +25,7 @@ if( isset($_POST) ){
 		$formok = false;
 		$errors[] = "You have not entered a name";
 	}
-	
+	echo "done";
 	//validate email address is not empty
 	if(empty($email)){
 		$formok = false;
@@ -45,7 +46,7 @@ if( isset($_POST) ){
 		$formok = false;
 		$errors[] = "Your message must be greater than 20 characters";
 	}
-	
+	echo $formok;
 	//send email if all is ok
 	if($formok){
 		$headers = "From: website@website.com" . "\r\n";
@@ -54,8 +55,8 @@ if( isset($_POST) ){
 		$emailbody = "<p>You have recieved a new message from the enquiries form on your website.</p>
 					  <p><strong>Name: </strong> {$name} </p>
 					  <p><strong>Email Address: </strong> {$email} </p>
-					  <p><strong>Telephone: </strong> {$telephone} </p>
-					  <p><strong>Enquiry: </strong> {$enquiry} </p>
+					  <p><strong>Phone: </strong> {$phone} </p>
+					  <p><strong>Business: </strong> {$business} </p>
 					  <p><strong>Message: </strong> {$message} </p>
 					  <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>";
 		
@@ -68,22 +69,22 @@ if( isset($_POST) ){
 		'posted_form_data' => array(
 			'name' => $name,
 			'email' => $email,
-			'telephone' => $telephone,
-			'enquiry' => $enquiry,
+			'phone' => $phone,
+			'business' => $business,
 			'message' => $message
 		),
 		'form_ok' => $formok,
 		'errors' => $errors
 	);
 		
-	
+	echo $_SERVER['HTTP_X_REQUESTED_WITH'];
 	//if this is not an ajax request
-	if(empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest'){
+	//if(empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest'){
 		//set session variables
-		session_start();
+		//session_start();
 		$_SESSION['cf_returndata'] = $returndata;
-		
+			echo "Finish";
 		//redirect back to form
-		header('location: ' . $_SERVER['HTTP_REFERER']);
-	}
+		//header('location: ' . $_SERVER['HTTP_REFERER']);
+	//}
 }

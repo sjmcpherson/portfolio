@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="description" content="Portfolio of Stuart McPherson">
-<!-- TemplateBeginEditable name="doctitle" -->
+<!-- InstanceBeginEditable name="doctitle" -->
 <title>Portfolio of Stuart McPherson</title>
-<!-- TemplateEndEditable -->
+<!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <link rel="shortcut icon" href="icon/favicon.ico">
@@ -33,8 +33,8 @@
 
 <!--<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>-->
 
-<!-- TemplateBeginEditable name="head" -->
-<!-- TemplateEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
  
 </head>
 <body>
@@ -64,12 +64,41 @@
 </div>
 </header>
 <section class="wrap main">
-<!-- TemplateBeginEditable name="content" -->
+<!-- InstanceBeginEditable name="content" -->
+	<article class="detail">
+    	<div class="heroimages">
+            <img class="headimage" src="img/email-imac.jpg" alt="Email Marketing">
+            <img class="iphone" src="img/email-iphone.png" alt="Email Marketing">
+        </div>
+        
+        <div class="side">
+		<h1>Flipmind Email Marketing Campaign</h1>       
+        <p>Created a clean marketing email template for Flipmind using responsive email techniques and best practises in readability and email client compatibility</p>        
+        
+        <h5>Skills/Technologies Used</h5>       
+        <ul>
+        <li>CSS/HTML</li>
+        <li>Responsive Email Design</li>
+        </ul>    
+        
+        <h3>Have a look at the email for yourself by entering your email address below</h3>
+        <div id="mc_embed_signup">
+        <form action="http://flipmind.us2.list-manage.com/subscribe/post?u=adfa1cc192806351d8f1a600d&amp;id=e725f4f609" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <label for="mce-EMAIL">Email Address:</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" required>
+            <button type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe">subscribe</button>
+        </form>
+        </div>        
+        <!--End mc_embed_signup-->
+        <hr>
+        </div>
+        <div class="auximages">
+                <img src="img/email-aux1.jpg" alt="Email Marketing">
+        </div>
+    </article>
 
 
-
-
-<!-- TemplateEndEditable -->
+<!-- InstanceEndEditable -->
 </section><!-- END MAIN --> 
 <footer>
   <section class="wrap contact">
@@ -100,4 +129,4 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 	</script>
-</body></html>
+</body><!-- InstanceEnd --></html>

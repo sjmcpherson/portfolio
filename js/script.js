@@ -70,7 +70,7 @@ $(function(){
 				
 				//if there is a value missing
 				if(this.validity.valueMissing){
-					errors.push(nameUC + errorMessages.required);	
+					errors.push("<strong>"+nameUC+"</strong>" + errorMessages.required);	
 				}
 				//if this is an email input and it is not valid
 				else if(this.validity.typeMismatch && type == 'email'){
@@ -145,7 +145,8 @@ $(function(){
 				data: form.serialize(),
 				success: function(){
 					showNotice('success');
-					form.get(0).reset();
+					//form.get(0).reset();
+					form.animate({ height: 0 }, 600,function(){form.hide()});
 					loading.hide();
 				}
 			});

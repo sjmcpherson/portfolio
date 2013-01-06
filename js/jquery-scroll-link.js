@@ -26,7 +26,7 @@ anchor = {
 			var url = window.location.pathname;
 			var filename = url.substring(url.lastIndexOf('/')+1);
 			//$("a[href='" + filename + "']").addClass("sel"); 			
-			
+			console.log(filename);
 			if(filename == "index.php"){
 				if (li.is(':not(:first-child)')) {
 					var elementClick = $(this).attr("href");
@@ -34,8 +34,8 @@ anchor = {
 					destination = $(goClick).offset().top- 50;
 				}
 				$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, 1000,"easeOutExpo", function(){});
-			}
-		  	//return false;
+				return false;
+			}		  	
 		})
 	}
 }

@@ -1,16 +1,18 @@
+<?php
+session_start();
+	date_default_timezone_set('Pacific/Auckland');
 
+ ?>
 
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
 <head>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="description" content="Portfolio of Stuart McPherson">
-<!-- InstanceBeginEditable name="doctitle" -->
 <title></title>
-<!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <link rel="shortcut icon" href="icon/favicon.ico">
@@ -21,15 +23,26 @@
 <link href="css/zgo8syp-d.css" rel="stylesheet">
 <link href="css/fdb0guo-d.css" rel="stylesheet">
 
-<link rel="stylesheet/less" type="text/css" href="css/style.less">
+<!--<link rel="stylesheet/less" type="text/css" href="css/style.less">-->
+<?php
+
+									require "lessc.inc.php";
+$parser = new lessc(); // Start new object from PHP Less script
+$parser->setImportDir("css/");
+try {
+
+$less_code = file_get_contents('css/style.less'); // Grab LESS
+$processed_css = $parser->parse($less_code); // Process to CSS
+
+
+file_put_contents('css/css-file.css', $processed_css); // Write CSS
+echo "<link rel='stylesheet' href='css/css-file.css' type='text/css' media='all' />"; // Link CSS in page
+} catch (exception $e) {
+  echo "fatal error: " . $e->getMessage();
+}
+ ?>
 
 <!--<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>-->
-
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
- 
-
-
 
 </head>
 <body>
@@ -60,8 +73,7 @@
 </header>
 
 <section class="wrap main">
-<!-- InstanceBeginEditable name="content" -->
-			<a name="portfolio" id="portfolio"></a>
+<a name="portfolio" id="portfolio"></a>
 
            	<div class="half">
             	<p class="lge">Welcome,</p> 
@@ -155,10 +167,32 @@
                         </ul>
                     </article>   
                 </div>
+           	<article class="detail slide">
+                    <div class="heroimages">
+                        <img class="headimage" src="img/dave-imac.jpg" alt="Email Marketing">
+                    </div>
+                    
+                    <div class="side">
+                    <h1>Dave Van Rijk</h1>       
+                    <p>Developed a E-Commerce site using PayPal for the Mandala artist Dave Van Rijk and his works using Drupal 7 for content & image updates.</p>        
+                    
+                    <h5>Skills/Technologies Used</h5>       
+                    <ul>
+                    <li>CSS/HTML</li>
+                    <li>jQuery/Javascript</li>
+                    <li>E-Commerce</li>
+                    <li>Drupal</li>
+                    </ul>    
+                    
+                
+                    <!--End mc_embed_signup-->
+                    <hr>
+                    </div>
+    </article>
 </section>               
 <a name="about" id="about"></a>                
 <section class="wrap main">
-             	<h3>&lt; About Me / &gt;</h3>
+             	<h3>about me</h3>
                 <hr>
                 <div class="half">
             	<p class="lge">Hello,</p> 
@@ -185,7 +219,7 @@
                 <div class="cube five l2">
                     <div class="topFace"><div></div></div>
                     <div class="leftFace"></div>
-                    <div class="rightFace"><p>Photoshop/Illustrator</p></div>				
+                    <div class="rightFace"><p>Photoshop</p></div>				
                 </div>
                 <div class="cube four l3">
                     <div class="topFace"><div></div></div>
@@ -195,7 +229,7 @@
                 <div class="cube three l3">
                     <div class="topFace"><div></div></div>
                     <div class="leftFace"></div>
-                    <div class="rightFace"><p>JQuery/JQuery Mobile</p></div>				
+                    <div class="rightFace"><p>jQuery</p></div>				
                 </div>
                 <div class="cube two l4">
                     <div class="topFace"><div></div></div>
@@ -207,7 +241,7 @@
                     <div class="leftFace"></div>
                     <div class="rightFace"><p>HTML/HTML5</p></div>	
                 </div>
-                <div class="cube scale l4">                	
+                <div class="scale l4">                	
                     <ul><li><span>Master</span></li><li><span>Expert</span></li><li><span>Apprentice</span></li><li class="endf"><span>Amature</span></li></ul>
                 </div>				
                 </div>
@@ -236,9 +270,10 @@
                 <p>When I'm not crafting websites, I can be found on a found on a football ground or hiking in the wilderness.</p>            
             </article>
             </section>           
-			<a name="contact" id="contact"></a>
+
 <section class="wrap main">
-              <h3>&lt; Say Hello / &gt;</h3>
+			<a name="contact" id="contact"></a>
+              <h3>say hello</h3>
             <hr>
             <div class="half">
                     		<h1>I would like to hear about your opportunity</h1>
@@ -251,7 +286,10 @@
 			<div class="form half">                               
                                <h2>Contact Form</h2>
                                <hr class="light">
-								<?php
+
+								<?php						
+
+
                                 //init variables
                                 $cf = array();
                                 $sr = false;
@@ -261,7 +299,7 @@
                                     $sr = true;
                                 }
                                 ?>
-                                <ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
+                                <ul id="errors" class="forminfo <?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
                                     <li id="info">There were some problems with your form submission:</li>
                                     <?php 
                                     if(isset($cf['errors']) && count($cf['errors']) > 0) :
@@ -273,18 +311,20 @@
                                     endif;
                                     ?>
                                 </ul>
-                                <p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message! We will get back to you ASAP</p>
-                               <form id="contact-form" method="post" action="process.php">
+                                <div id="success" class="forminfo<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">
+                                	<h3>Thank you for your message!</h3>
+                                    <h4>I will endeavor get back to you soon</h4>
+                               </div>
+                               <form id="cform" class="cform" method="post" action="process.php">
                                <label for="name"><span>*</span>Name:</label><input type="text" name="name" required id="name" placeholder="your name">                               
                                <label for="email"><span>*</span>Email:</label><input type="email" name="email" required id="email" placeholder="your email">
                                <label for="phone">Phone:</label><input type="text" name="phone" id="phone" placeholder="your phone number">
                                <label for="business">Business:</label><input type="text" name="business" id="business" placeholder="name of your business">
                                <label for="message"><span>*</span>Message:</label><textarea required id="message" name="message" placeholder="your message"></textarea>
-                               <input name="submit" id="submit" type="submit" value="send message" />
+                               <button type="submit" id="submit" class="button"  form="contact-form" value="send message">send message</button> 
                                </form>
            </div>
-<!-- InstanceEndEditable -->
-	</section><!-- END MAIN -->
+</section><!-- END MAIN -->
 	<footer>
   	  <section class="wrap contact">
   	    <h2>contact me</h2>
@@ -296,7 +336,7 @@
     </section>
 	</footer>		
   
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>      
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->   
 <script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
 <script src="js/less-1.3.1.min.js" type="text/javascript"></script>
 <!--[if lt IE 9]>
@@ -322,4 +362,4 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 	</script>
-</body><!-- InstanceEnd --></html>
+</body></html>

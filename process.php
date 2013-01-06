@@ -25,7 +25,6 @@ if( isset($_POST) ){
 		$formok = false;
 		$errors[] = "You have not entered a name";
 	}
-	echo "done";
 	//validate email address is not empty
 	if(empty($email)){
 		$formok = false;
@@ -46,7 +45,7 @@ if( isset($_POST) ){
 		$formok = false;
 		$errors[] = "Your message must be greater than 20 characters";
 	}
-	echo $formok;
+
 	//send email if all is ok
 	if($formok){
 		$headers = "From: website@website.com" . "\r\n";
@@ -77,7 +76,7 @@ if( isset($_POST) ){
 		'errors' => $errors
 	);
 		
-	echo $_SERVER['HTTP_X_REQUESTED_WITH'];
+	//echo $_SERVER['HTTP_X_REQUESTED_WITH'];
 	//if this is not an ajax request
 	//if(empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest'){
 		//set session variables

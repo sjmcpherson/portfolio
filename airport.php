@@ -1,9 +1,6 @@
-
-
 <!DOCTYPE html>
 <html lang="en"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
-
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,32 +14,40 @@
 <link rel="apple-touch-icon" href="icon/touch-icon-iphone.png" />
 <link rel="apple-touch-icon" sizes="72x72" href=icon/"touch-icon-ipad.png" />
 <link rel="apple-touch-icon" sizes="114x114" href="icon/touch-icon-iphone4.png" />
-<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link href="css/zgo8syp-d.css" rel="stylesheet">
 <link href="css/fdb0guo-d.css" rel="stylesheet">
+<?php include "lessphp-call.php" ?>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->   
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
 
-<link rel="stylesheet/less" type="text/css" href="css/style.less">
+<script type="text/javascript" src="js/modernizr-latest.js"></script>
+<!--[if lt IE 9]>
+><script type="text/javascript" src="js/selectivizr-min.js?ver=1.0.2"></script>
+
+<![endif]-->
+<script src="js/less-1.3.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/fdb0guo.js"></script>
+<script type="text/javascript" src="js/zgo8syp.js"></script>
+
+<!--<link rel="stylesheet/less" type="text/css" href="css/style.less">-->
 
 <!--<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>-->
 
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
  
-
-
-
 </head>
 <body>
 <header>
 <div class="wrap">
 <div id="logo">
-		<a href="index.html">Stuart McPherson</a>
+		<a href="/">Stuart McPherson</a>
 		<h5>Front End Web Developer</h5>
 </div>			
 <ul class="icons">
 <li><a href="mailto:me@sjmcpherson.com" class="fs1" aria-hidden="true" data-icon="&#xe00f;"></a></li>
-<li><a href="http://nz.linkedin.com/pub/stuart-mcpherson" aria-hidden="true" data-icon="&#xe002;"></a></li>
-<li><a href="https://twitter.com/sjmcpherso" aria-hidden="true" data-icon="&#xe001;"></a></li>
+<li><a href="http://nz.linkedin.com/pub/stuart-mcpherson" aria-hidden="true" target="_blank" data-icon="&#xe002;"></a></li>
+<li><a href="https://twitter.com/sjmcpherso" aria-hidden="true" target="_blank" data-icon="&#xe001;"></a></li>
 <!--<li><a href="mailto:me@sjmcpherson.com"><i class="icon-envelope icon-small"></i></a></li>
 <li><a href="http://nz.linkedin.com/pub/stuart-mcpherson"><i class="icon-linkedin icon-small"></i></a></li>
 <li><a href="https://twitter.com/sjmcpherso"><i class="icon-twitter icon-small"></i></a></li>-->
@@ -50,7 +55,7 @@
 <nav>
 
 <ul class="menu">
-<li><a href="index.php#portfolio">my work</a></li>
+<li><a href="index.php">my work</a></li>
 <li><a href="index.php#about">about me</a></li>
 <li><a href="index.php#contact">say hello</a></li>
 </ul>
@@ -58,60 +63,58 @@
 </nav>
 </div>
 </header>
-
 <section class="wrap main">
 <!-- InstanceBeginEditable name="content" -->
 	<article class="detail">
     	<div class="heroimages">
-            <img class="headimage" src="img/dave-imac.jpg" alt="Email Marketing">
+            	<img class="headimage" src="img/airport-ipad.jpg" alt="iCoach Rugby">
         </div>
-        
-        <div class="side">
-		<h1>Dave Van Rijk</h1>       
-        <p>Developed a E-Commerce site using PayPal for the Mandala artist Dave Van Rijk and his works using Drupal 7 for content & image updates.</p>        
-        
-        <h5>Skills/Technologies Used</h5>       
-        <ul>
-        <li><i class="icon-ok"></i> CSS/HTML</li>
-        <li><i class="icon-ok"></i> jQuery/Javascript</li>
-        <li><i class="icon-ok"></i> E-Commerce</li>
-        <li><i class="icon-ok"></i> Drupal</li>
-        </ul>    
-        
-    
-        <!--End mc_embed_signup-->
+      <div class="side">            
+            <h1>Auckland Airport Checklists/Survey Systems</h1>
+            <h2>Auckland Airport iPad Questionaire</h2>
+     		 <hr class="light">            
+            <p>Developed a dynamic generated questionaire for Auckland Airport as an internal iPad survey using jQuery Mobile & Ajax</p>
+            <h5>Skills/Technologies Used</h5>       
+            <ul>
+            <li>CSS3/HTML5</li>
+            <li>Javascript/AJAX</li>
+            <li>jQuery/jQuery Mobile</li>
+            <li>Angular JS</li>            
+            </ul> 
+            <h2>Auckland Airport Tablet Audit Checklists</h2>
+      		<hr class="light">            
+            <p>Developed a smart phone customer feedback survey for a number of major retailers, intended for smart phones & easily skinable</p>
+            <h5>Skills/Technologies Used</h5>       
+            <ul>
+            <li>CSS3/HTML5</li>
+            <li>Javascript/AJAX</li>
+            <li>jQuery/jQuery Mobile</li>
+            </ul>    
         <hr>
+        
         </div>
-        <div class="auximages">
-                <img src="img/dave-aux1.jpg" alt="Email Marketing">
+                <div class="auximages">
+           <!-- <img src="img/airport-aux1.jpg" alt="Flipmind">-->
         </div>
     </article>
 
 
 <!-- InstanceEndEditable -->
-	</section><!-- END MAIN -->
-	<footer>
-  	  <section class="wrap contact">
+</section><!-- END MAIN --> 
+<footer>
+  <section class="wrap contact">
   	    <h2>contact me</h2>
   	    <ul>
         <li><a aria-hidden="true" data-icon="&#xe00e;" href="mailto:me@sjmcpherson.com"> me@sjmcpherson.com</a></li>
-        <li><a aria-hidden="true" data-icon="&#xe004;" href="tel:021-733996"> 021-733996</a></li> 
-        <li><a aria-hidden="true" data-icon="&#xe00d;" href="https://twitter.com/sjmcpherso"> @sjmcpherso</a></li>
+        <li><a aria-hidden="true" data-icon="&#xe004;" target="_blank" href="tel:021-733996"> 021-733996</a></li> 
+        <li><a aria-hidden="true" data-icon="&#xe00d;" target="_blank" href="https://twitter.com/sjmcpherso"> @sjmcpherso</a></li>
  		</ul>
-    </section>
-	</footer>		
+  </section>
+</footer>		
   
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>      
-<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
-<script src="js/less-1.3.1.min.js" type="text/javascript"></script>
-<!--[if lt IE 9]>
-><script type="text/javascript" src="js/selectivizr.js?ver=1.0.2"></script>
-<script type="text/javascript" src="js/respond.min.js"></script>
-<![endif]-->
-<script type="text/javascript" src="js/fdb0guo.js"></script>
-<script type="text/javascript" src="js/zgo8syp.js"></script>
-<script type="text/javascript" src="js/modernizr-latest.js"></script>
 
+
+<script type="text/javascript" src="js/respond.src.js"></script>
 <script src="js/jquery-scroll-link.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/script.js"></script>     

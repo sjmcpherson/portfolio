@@ -1,9 +1,6 @@
-
-
 <!DOCTYPE html>
 <html lang="en"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
-
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,32 +14,40 @@
 <link rel="apple-touch-icon" href="icon/touch-icon-iphone.png" />
 <link rel="apple-touch-icon" sizes="72x72" href=icon/"touch-icon-ipad.png" />
 <link rel="apple-touch-icon" sizes="114x114" href="icon/touch-icon-iphone4.png" />
-<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link href="css/zgo8syp-d.css" rel="stylesheet">
 <link href="css/fdb0guo-d.css" rel="stylesheet">
+<?php include "lessphp-call.php" ?>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->   
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
 
-<link rel="stylesheet/less" type="text/css" href="css/style.less">
+<script type="text/javascript" src="js/modernizr-latest.js"></script>
+<!--[if lt IE 9]>
+><script type="text/javascript" src="js/selectivizr-min.js?ver=1.0.2"></script>
+
+<![endif]-->
+<script src="js/less-1.3.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/fdb0guo.js"></script>
+<script type="text/javascript" src="js/zgo8syp.js"></script>
+
+<!--<link rel="stylesheet/less" type="text/css" href="css/style.less">-->
 
 <!--<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>-->
 
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
  
-
-
-
 </head>
 <body>
 <header>
 <div class="wrap">
 <div id="logo">
-		<a href="index.html">Stuart McPherson</a>
+		<a href="/">Stuart McPherson</a>
 		<h5>Front End Web Developer</h5>
 </div>			
 <ul class="icons">
 <li><a href="mailto:me@sjmcpherson.com" class="fs1" aria-hidden="true" data-icon="&#xe00f;"></a></li>
-<li><a href="http://nz.linkedin.com/pub/stuart-mcpherson" aria-hidden="true" data-icon="&#xe002;"></a></li>
-<li><a href="https://twitter.com/sjmcpherso" aria-hidden="true" data-icon="&#xe001;"></a></li>
+<li><a href="http://nz.linkedin.com/pub/stuart-mcpherson" aria-hidden="true" target="_blank" data-icon="&#xe002;"></a></li>
+<li><a href="https://twitter.com/sjmcpherso" aria-hidden="true" target="_blank" data-icon="&#xe001;"></a></li>
 <!--<li><a href="mailto:me@sjmcpherson.com"><i class="icon-envelope icon-small"></i></a></li>
 <li><a href="http://nz.linkedin.com/pub/stuart-mcpherson"><i class="icon-linkedin icon-small"></i></a></li>
 <li><a href="https://twitter.com/sjmcpherso"><i class="icon-twitter icon-small"></i></a></li>-->
@@ -50,7 +55,7 @@
 <nav>
 
 <ul class="menu">
-<li><a href="index.php#portfolio">my work</a></li>
+<li><a href="index.php">my work</a></li>
 <li><a href="index.php#about">about me</a></li>
 <li><a href="index.php#contact">say hello</a></li>
 </ul>
@@ -58,62 +63,67 @@
 </nav>
 </div>
 </header>
-
 <section class="wrap main">
 <!-- InstanceBeginEditable name="content" -->
 	<article class="detail">
 		<div class="heroimages">
-            	<img class="headimage" src="img/flipmind-imac.jpg" alt="Flipmind">
-       	<img class="iphone" src="img/flipmind-iphone.png" alt="Flipmind">
+            	<img class="headimage" src="img/icoach-imac.jpg" alt="iCoach Rugby">
+       	<img class="iphone" src="img/icoach-iphone.png" alt="iCoach Rugby">
 		</div>
 
         <div class="side">
-      	<h1>Flipmind Business Marketing Hub</h1>  
+      	<h1>iCoach Rugby Statistics System</h1>  
+		<h2>iCoach Public Website & Team Management Tool</h2>
         <hr class="light">       
-        <p>Design & development for Flipmind marketing hub. Given full responsibilty to manage the development of flipmind first reference for potenial clients. Integrated with Umbraco for Content Mangement</p> 
+        <p>Design & javascript development for iCoach Rugby marketing site & its team management tool. Overseeing the initial CSS/HTML production, before taking full responsibility of project from interfacing with client and providing estimates to javascript & C#.NET development. </p> 
         <h5>Skills/Technologies Used</h5>
         <ul>
-        <li><i class="icon-ok"></i> CSS3/HTML5</li>
-        <li><i class="icon-ok"></i> jQuery/Javascript</li>
-        <li><i class="icon-ok"></i> C#.NET</li>
-        <li><i class="icon-ok"></i> Umbraco</li>
-        <li><i class="icon-ok"></i> Responsive Web Design</li>
-        <li><i class="icon-ok"></i> Social Media</li>
-        <li><i class="icon-ok"></i> Rich Snippets</li>
+        <li>CSS/HTML</li>
+        <li>jQuery/Javascript</li>
+        <li>C#.NET</li>
+        <li>Microsoft Azure</li>
         </ul>
+        <h4>Visit the Website <a target="_blank" class="hlink" href="http://www.i-coachrugby.com">www.i-coachrugby.com</a></h4>                             
         
+        <h2>iCoach Rugby iCoach/Android App</h2>
+        <hr class="light">
+        <p>Designed & developed the iCoach Rugby mobile app using the Javascript framework Titanium Appcelerator for iOS & Android platforms. Interfacing with directors and testers for app updates.</p>
+        <h5>Skills/Technologies Used</h5>       
+        <ul>
+        <li>Titanium Appcelertor</li>
+        <li>Javascript/AJAX</li>
+        <li>CommonJS</li>
+        <li>REST</li>
+        </ul> 
+        
+        <div class="stores">
+        <a href="https://play.google.com/store/apps/details?id=com.flipmind.icoach&hl=en"><img src="img/appstore_android.png" alt="App Store"></a> <a href="http://itunes.apple.com/nz/app/i-coach-rugby-your-rugby-team/id440654748?mt=8"><img src="img/appstore_ios.png" alt="App Store"></a> 
+        </div>
         <hr>
         </div>  
         <div class="auximages">
-            <img src="img/flipmind-aux1.jpg" alt="Flipmind">
+                <img src="img/icoach-aux1.jpg" alt="iCoach Rugby">
+                <img src="img/icoach-aux2.jpg" alt="iCoach Rugby">
         </div>
     </article>
 
 
 <!-- InstanceEndEditable -->
-	</section><!-- END MAIN -->
-	<footer>
-  	  <section class="wrap contact">
+</section><!-- END MAIN --> 
+<footer>
+  <section class="wrap contact">
   	    <h2>contact me</h2>
   	    <ul>
         <li><a aria-hidden="true" data-icon="&#xe00e;" href="mailto:me@sjmcpherson.com"> me@sjmcpherson.com</a></li>
-        <li><a aria-hidden="true" data-icon="&#xe004;" href="tel:021-733996"> 021-733996</a></li> 
-        <li><a aria-hidden="true" data-icon="&#xe00d;" href="https://twitter.com/sjmcpherso"> @sjmcpherso</a></li>
+        <li><a aria-hidden="true" data-icon="&#xe004;" target="_blank" href="tel:021-733996"> 021-733996</a></li> 
+        <li><a aria-hidden="true" data-icon="&#xe00d;" target="_blank" href="https://twitter.com/sjmcpherso"> @sjmcpherso</a></li>
  		</ul>
-    </section>
-	</footer>		
+  </section>
+</footer>		
   
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>      
-<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
-<script src="js/less-1.3.1.min.js" type="text/javascript"></script>
-<!--[if lt IE 9]>
-><script type="text/javascript" src="js/selectivizr.js?ver=1.0.2"></script>
-<script type="text/javascript" src="js/respond.min.js"></script>
-<![endif]-->
-<script type="text/javascript" src="js/fdb0guo.js"></script>
-<script type="text/javascript" src="js/zgo8syp.js"></script>
-<script type="text/javascript" src="js/modernizr-latest.js"></script>
 
+
+<script type="text/javascript" src="js/respond.src.js"></script>
 <script src="js/jquery-scroll-link.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/script.js"></script>     

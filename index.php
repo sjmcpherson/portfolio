@@ -11,7 +11,7 @@ session_start();
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="description" content="Portfolio of Stuart McPherson">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title></title>
+<title>Portfolio of Front-End Developer Stuart McPherson</title>
 <!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -70,29 +70,20 @@ session_start();
 </header>
 <section class="wrap main">
 <!-- InstanceBeginEditable name="content" -->
-<a name="portfolio" id="portfolio"></a>
-
-           	<div class="half">
+<a name="portfolio" class="bookmark" id="portfolio"></a>
             	<p class="lge">Welcome,</p> 
-                <h2>My name is Stuart and this is my portfolio</h2>                
-                              
-            </div>
-           	<div class="half form">
-                            <!--<blockquote>
-                    <span class="quote">&ldquo;</span>
-                    <p><span>My</span> <span class="lge">passion</span> is to <span>create</span> <span class="lge">innovative</span> & <span class="lge">intuitive</span> <span>web</span> & <span>mobile</span> <span>experiences</span></p>
-                </blockquote>    -->
-            </div>
+                <h2>My name is Stuart I design and build websites that are a pleasure to use....</h2>          
+
                 
 <div id="portlinks" class="portfolio">
-                    <article class="port">
-                   		 <a href="surveys.php"><img src="img/port-survey.jpg" alt="Airport Survey"></a>
-                         <div class="header">
+
+                  <article class="port">
+                    	<a href="diff.php"><img src="img/port-diff.jpg" alt="The Difference"></a>                    
+                        <div class="header">
                             <h4>Designer/Developer</h4>
-                            <h5><a href="surveys.php">Mobile Feedback Systems</a></h5></i>
+                            <h5><a href="diff.php">The Difference Catering Website</a></h5></i>
                         </div>
-                    </article>
-                    
+                    </article>  
                     <article class="port">
                    		<a href="icoach.php"><img src="img/port-icoach.jpg" alt="iCoach Rugby"></a>                    
                         <div class="header">
@@ -100,7 +91,20 @@ session_start();
                             <h5><a href="icoach.php">iCoach Rugby App/Tool</a></h5></i>
                         </div>
                     </article>
-                    
+                     <article class="port">
+                   		 <a href="surveys.php"><img src="img/port-survey.jpg" alt="Airport Survey"></a>
+                         <div class="header">
+                            <h4>Designer/Developer</h4>
+                            <h5><a href="surveys.php">Mobile Feedback Systems</a></h5></i>
+                        </div>
+                    </article>                     
+                    <article class="port">
+                        <a href="infield.php"><img src="img/port-infield.jpg" alt="Infield"></a>                     
+                        <div class="header">
+                            <h4>Designer/Developer</h4>
+                            <h5><a href="infield.php">Infield Marketing Website</a></h5></i>
+                        </div>
+                    </article>
                     <article class="port">
                     	<a href="email.php"><img src="img/port-email.jpg" alt="Flipmind Email"></a>                    
                         <div class="header">
@@ -131,25 +135,13 @@ session_start();
                         </div>
                     </article>
                     
-                     <article class="port">
-                        <a href="infield.php"><img src="img/port-infield.jpg" alt="Infield"></a>                     
-                        <div class="header">
-                            <h4>Designer/Developer</h4>
-                            <h5><a href="infield.php">Infield Marketing Website</a></h5></i>
-                        </div>
-                    </article>
-                    <article class="port">
-                    	<a href="diff.php"><img src="img/port-diff.jpg" alt="The Difference"></a>                    
-                        <div class="header">
-                            <h4>Designer/Developer</h4>
-                            <h5><a href="diff.php">The Difference Catering Website</a></h5></i>
-                        </div>
-                    </article>  
+
+
                     <article class="port">
                     	<a href="dave.php"><img src="img/port-dave.jpg" alt="Dave Van Rijk"></a>                    
                         <div class="header">
                             <h4>Developer</h4>
-                            <h5><a href="dave.php">Dave Van Rijk E-Commerce Website</a></h5></i>
+                            <h5><a href="dave.php">Dave Van Rijk E-Commerce Site</a></h5></i>
                         </div>
                     </article>
                    <article class="port other">
@@ -166,14 +158,13 @@ session_start();
                 </div>
            
 </section>               
-<a name="about" id="about"></a>                
+<a name="about" class="bookmark" id="about"></a>                
 <section class="wrap main">
-             	<h3>about me</h3>
-                <hr>
+             	<div class="breadcrumb"><h3>about me</h3></div>
+
+                <p class="lge">Hello,</p> 
+                <h2>I'm a Front-End Web Developer specializing in HTML5, CSS3 and Javascript</h2>      
                 <div class="half">
-            	<p class="lge">Hello,</p> 
-                <h2>I'm a Front-End Web Developer specializing in HTML5, CSS3 and Javascript</h2>               
-                                <p>&nbsp;</p>
                 <h2>Technical Skills</h2>
                 <hr class="light">
                 <div class="graph">
@@ -237,7 +228,7 @@ session_start();
                     <ul><li><span>Amature</span></li><li><span>Apprentice</span></li><li><span> Expert</span></li><li class="endf"><span>Master</span></li></ul>
                 </div> -->                   
             </div>
-           	<article class="half form">
+           	<article class="half form home">
             <h2>Bio</h2>
 				<hr class="light">
                 <p>Hi my name is Stuart McPherson my specialities are HTML5, CSS3 and Javascript, I love developing websites with a clean and inventive user experience. While I am no fully skilled back-end developer I do have experience in Server-side .NET & PHP development and even once worked as a Graphic Designer.</p>                        
@@ -249,8 +240,7 @@ session_start();
 
 <section class="wrap main">
 			<a name="contact" id="contact"></a>
-              <h3>say hello</h3>
-            <hr>
+            <div class="breadcrumb"><h3>say hello</h3></div>
             <div class="half">
                     		<h1>I would like to hear about your opportunity</h1>
                             <h3>Fill Out the contact form or contact me via the options below</h3>                                                 

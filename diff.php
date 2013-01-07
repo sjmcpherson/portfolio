@@ -66,18 +66,21 @@
 <section class="wrap main">
 <!-- InstanceBeginEditable name="content" -->
 	<article class="detail">
-    	<div class="heroimages">
-
-        </div>
+		<div class="heroimages">
+            	<img class="headimage" src="img/diff-imac.jpg" alt="TheDifference">
+		</div>
         
         <div class="side">
 		<h1>The Difference Catering</h1>       
-        <p>Designed & developed a simple marketing site for The Difference Catering.</p>        
+        <p>Designed & developed a simple & elegant marketing site for The Difference Catering.</p>
+        
+        <p>Utilized Search Engine Optimizing techniques to take them to the top of Google rankings(<a target="_blank" href="http://www.google.co.nz/search?hl=en&tbo=d&output=search&sclient=psy-ab&q=catering+auckland&btnK=#hl=en&sugexp=les%3B&gs_rn=1&gs_ri=serp&pq=catering%20auckland&cp=13&gs_id=12&xhr=t&q=auckland+catering&pf=p&tbo=d&biw=1920&bih=985&sclient=psy-ab&oq=auckland+cate&gs_l=&pbx=1&fp=1&bpcl=40096503&bav=on.2,or.r_gc.r_pw.r_qf.&cad=b&sei=FIHqUPaDH5CyiQeo-oHoBw">See Here</a>) in a highly competitive market </p>        
         
         <h5>Skills/Technologies Used</h5>       
         <ul>
         <li>CSS3/HTML5</li>
         <li>jQuery/Javascript</li>
+        <li>SEO</li>       
         </ul>    
         <h4>Visit the Website <a target="_blank" class="hlink" href="http://www.thedifference.co.nz">www.thedifference.co.nz</a></h4>
     

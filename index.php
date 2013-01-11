@@ -1,10 +1,8 @@
-<?php
-session_start();
-	date_default_timezone_set('Pacific/Auckland');
- ?>
-
-<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
@@ -13,7 +11,8 @@ session_start();
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Portfolio of Front-End Developer Stuart McPherson</title>
 <!-- InstanceEndEditable -->
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;">
+<meta name="viewport" content="width=device-width">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <link rel="shortcut icon" href="icon/favicon.ico">
 <link rel="apple-touch-icon" href="icon/touch-icon-iphone.png" />
@@ -22,20 +21,8 @@ session_start();
 <link href="css/zgo8syp-d.css" rel="stylesheet">
 <link href="css/fdb0guo-d.css" rel="stylesheet">
 <?php include "lessphp-call.php" ?>
-<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->   
-<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
-
-<script type="text/javascript" src="js/modernizr-latest.js"></script>
-<!--[if lt IE 9]>
-><script type="text/javascript" src="js/selectivizr-min.js?ver=1.0.2"></script>
-
-<![endif]-->
-<script src="js/less-1.3.1.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/fdb0guo.js"></script>
-<script type="text/javascript" src="js/zgo8syp.js"></script>
-
 <!--<link rel="stylesheet/less" type="text/css" href="css/style.less">-->
-
+<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 <!--<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>-->
 
 <!-- InstanceBeginEditable name="head" -->
@@ -147,11 +134,11 @@ session_start();
                    <article class="port other">
                    		<h3>Others sites I have contributed to</h3>
 						<ul>
-                        	<li><a href="http://www.torpedo7.com">www.torpedo7.co.nz</a></li>
-                         	<li><a href="http://www.1-day.co.nz">www.1-day.co.nz</a></li>
-                            <li><a href="http://www.avantiplus.co.nz">www.avantiplus.co.nz</a></li>
-                            <li><a href="http://www.shoeconnection.co.nz">www.shoeconnection.co.nz</a></li>
-                            <li><a href="http://www.usplus.com">www.usplus.com</a></li>
+                        	<li><a target="_blank" href="http://www.torpedo7.com">www.torpedo7.co.nz</a></li>
+                         	<li><a target="_blank" href="http://www.1-day.co.nz">www.1-day.co.nz</a></li>
+                            <li><a target="_blank" href="http://www.avantiplus.co.nz">www.avantiplus.co.nz</a></li>
+                            <li><a target="_blank" href="http://www.shoeconnection.co.nz">www.shoeconnection.co.nz</a></li>
+                            <li><a target="_blank" href="http://www.usplus.com">www.usplus.com</a></li>
                        
                         </ul>
                     </article>   
@@ -164,8 +151,8 @@ session_start();
 
                 <p class="lge">Hello,</p> 
                 <h2>I'm a Front-End Web Developer specializing in HTML5, CSS3 and Javascript</h2>      
-                <div class="half">
-                <h2>Technical Skills</h2>
+                <div class="half technical">
+                <h3>Technical Skills</h3>
                 <hr class="light">
                 <div class="graph">
                 <div class="cube eight">
@@ -229,7 +216,7 @@ session_start();
                 </div> -->                   
             </div>
            	<article class="half form home">
-            <h2>Bio</h2>
+            <h3>Bio</h3>
 				<hr class="light">
                 <p>Hi my name is Stuart McPherson my specialities are HTML5, CSS3 and Javascript, I love developing websites with a clean and inventive user experience. While I am no fully skilled back-end developer I do have experience in Server-side .NET & PHP development and even once worked as a Graphic Designer.</p>                        
                 <p>After obtaining a Bachelor of Informations Systems back in 2002, I worked developing sites in .NET before deciding to focus on UI & Design. I went on to complete a Diploma in Digital Media at Media Design School, in the process receiving industry awards in both Design & Development for my work.</p>                
@@ -250,15 +237,15 @@ session_start();
                             <h4><a aria-hidden="true" data-icon="&#xe002;" href="http://nz.linkedin.com/pub/stuart-mcpherson"> LinkedIn Profile</a></h4>
         	</div>                
 			<div class="form half">                               
-                               <h2>Contact Form</h2>
+                               <h3>Contact Form</h3>
                                <hr class="light">
 
-								<?php 
-								
+
+                               <form id="cform" class="cform" method="post" action="process.php">
+                               <?php 								
                                 //init variables
                                 $cf = array();
                                 $sr = false;
-                                
                                 if(isset($_SESSION['cf_returndata'])){
                                     $cf = $_SESSION['cf_returndata'];
                                     $sr = true;
@@ -280,13 +267,14 @@ session_start();
                                 	<h3>Thank you for your message!</h3>
                                     <h4>I will endeavor get back to you soon</h4>
                                </div>
-                               <form id="cform" class="cform" method="post" action="process.php">
+                               <fieldset>
                                <label for="name"><span>*</span>Name:</label><input type="text" name="name" required id="name" placeholder="your name">                               
                                <label for="email"><span>*</span>Email:</label><input type="email" name="email" required id="email" placeholder="your email">
                                <label for="phone">Phone:</label><input type="text" name="phone" id="phone" placeholder="your phone number">
                                <label for="business">Business:</label><input type="text" name="business" id="business" placeholder="name of your business">
                                <label for="message"><span>*</span>Message:</label><textarea required id="message" name="message" placeholder="your message"></textarea>
                                <button type="submit" id="submit" class="button"  form="contact-form" value="send message">send message</button> 
+                               </fieldset>
                                </form>
            </div>
            
@@ -304,22 +292,22 @@ session_start();
   </section>
 </footer>		
   
-
-
-<script type="text/javascript" src="js/respond.src.js"></script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->   
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+<!--[if lt IE 9]>
+><script type="text/javascript" src="js/selectivizr-min.js?ver=1.0.2"></script>
+<![endif]-->
+<!--<script src="js/less-1.3.1.min.js"></script>-->
+<script src="js/fdb0guo.js"></script>
+<script src="js/zgo8syp.js"></script>
 <script src="js/jquery-scroll-link.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/script.js"></script>     
-<script src="js/controller.js"></script>     
-    <script>    
-    var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-215939-14']);
-      _gaq.push(['_trackPageview']);    
-    
-		(function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-	</script>
+<script src="js/controller.js"></script>  
+        <script>
+            var _gaq=[['_setAccount','UA-215939-14'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>   
 </body><!-- InstanceEnd --></html>

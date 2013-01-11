@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
@@ -8,7 +11,8 @@
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Portfolio of Stuart McPherson</title>
 <!-- InstanceEndEditable -->
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;">
+<meta name="viewport" content="width=device-width">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <link rel="shortcut icon" href="icon/favicon.ico">
 <link rel="apple-touch-icon" href="icon/touch-icon-iphone.png" />
@@ -17,20 +21,8 @@
 <link href="css/zgo8syp-d.css" rel="stylesheet">
 <link href="css/fdb0guo-d.css" rel="stylesheet">
 <?php include "lessphp-call.php" ?>
-<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->   
-<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
-
-<script type="text/javascript" src="js/modernizr-latest.js"></script>
-<!--[if lt IE 9]>
-><script type="text/javascript" src="js/selectivizr-min.js?ver=1.0.2"></script>
-
-<![endif]-->
-<script src="js/less-1.3.1.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/fdb0guo.js"></script>
-<script type="text/javascript" src="js/zgo8syp.js"></script>
-
 <!--<link rel="stylesheet/less" type="text/css" href="css/style.less">-->
-
+<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 <!--<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>-->
 
 <!-- InstanceBeginEditable name="head" -->
@@ -105,22 +97,22 @@
   </section>
 </footer>		
   
-
-
-<script type="text/javascript" src="js/respond.src.js"></script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->   
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+<!--[if lt IE 9]>
+><script type="text/javascript" src="js/selectivizr-min.js?ver=1.0.2"></script>
+<![endif]-->
+<!--<script src="js/less-1.3.1.min.js"></script>-->
+<script src="js/fdb0guo.js"></script>
+<script src="js/zgo8syp.js"></script>
 <script src="js/jquery-scroll-link.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/script.js"></script>     
-<script src="js/controller.js"></script>     
-    <script>    
-    var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-215939-14']);
-      _gaq.push(['_trackPageview']);    
-    
-		(function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-	</script>
+<script src="js/controller.js"></script>  
+        <script>
+            var _gaq=[['_setAccount','UA-215939-14'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>   
 </body><!-- InstanceEnd --></html>

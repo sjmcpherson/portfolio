@@ -2,6 +2,7 @@ $(function(){
 
 	//set global variables and cache DOM elements for reuse later
 	var form = $('#cform'),
+		formFieldset = $('#cform fieldset'),
 		formElements = form.find('input[type!="submit"],textarea'),
 		formSubmitButton = form.find('#submit'),
 		errorNotice = $('#errors'),
@@ -143,10 +144,12 @@ $(function(){
 				url: form.attr('action'),
 				type: form.attr('method'),
 				data: form.serialize(),
-				success: function(){
-					showNotice('success');
-					//form.get(0).reset();
-					form.animate({ height: 0 }, 600,function(){form.hide()});
+				success: function(){					
+					//form.get(0).reset();					
+					formFieldset.animate({ height: 0 }, 600,function(){		
+						showNotice('success');			
+						formFieldset.hide();					
+					});
 					loading.hide();
 				}
 			});
@@ -169,7 +172,7 @@ $(function(){
 		}
 		else {
 			errorNotice.hide();
-			successNotice.show();	
+			successNotice.fadeIn();	
 		}
 	}
 	

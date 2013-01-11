@@ -27,15 +27,17 @@ anchor = {
 			var filename = url.substring(url.lastIndexOf('/')+1);
 			//$("a[href='" + filename + "']").addClass("sel"); 			
 			console.log(filename);
-			if(filename == "index.php" || filename == "/"){
+			if(filename == "index.php" || filename == ""){
 				if (li.is(':not(:first-child)')) {
 					var elementClick = $(this).attr("href");
 					var goClick = elementClick.substring(elementClick.lastIndexOf('#'));
 					destination = $(goClick).offset().top;
 				}
 				$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, 1000,"easeOutExpo", function(){});
-				return false;
-			}		  	
+				return false; 
+			}		 
+				
 		})
+		
 	}
 }

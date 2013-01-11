@@ -8,8 +8,8 @@
     $processed_css = $parser->parse($less_code); // Process to CSS
     
     
-    file_put_contents('css/css-file.css', $processed_css); // Write CSS
-    echo "<link rel='stylesheet' href='css/css-file.css' type='text/css' media='all' />"; // Link CSS in page
+    file_put_contents('css/global.css', $processed_css); // Write CSS
+    echo "<link rel='stylesheet' href='css/global.css' type='text/css' media='all' />"; // Link CSS in page
     } catch (exception $e) {
       echo "fatal error: " . $e->getMessage();
 }

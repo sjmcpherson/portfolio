@@ -1,5 +1,4 @@
-<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
@@ -12,12 +11,7 @@
 <title>Portfolio of Front-End Developer Stuart McPherson</title>
 <!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;">
-<meta name="viewport" content="width=device-width">
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<link rel="shortcut icon" href="icon/favicon.ico">
-<link rel="apple-touch-icon" href="icon/touch-icon-iphone.png" />
-<link rel="apple-touch-icon" sizes="72x72" href=icon/"touch-icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="icon/touch-icon-iphone4.png" />
 <link href="css/zgo8syp-d.css" rel="stylesheet">
 <link href="css/fdb0guo-d.css" rel="stylesheet">
 <?php include "lessphp-call.php" ?>
@@ -57,7 +51,7 @@
 </header>
 <section class="wrap main">
 <!-- InstanceBeginEditable name="content" -->
-<a name="portfolio" class="bookmark" id="portfolio"></a>
+<a name="portfolio" id="portfolio"></a>
             	<p class="lge">Welcome,</p> 
                 <h2>My name is Stuart I design and build websites that are a pleasure to use....</h2>          
 
@@ -65,49 +59,49 @@
 <div id="portlinks" class="portfolio">
 
                   <article class="port">
-                    	<a href="diff.php"><img src="img/port-diff.jpg" alt="The Difference"></a>                    
+                    	<a href="diff.php"><img src="img/port-diff.jpg" alt="The Difference" /></a>                    
                         <div class="header">
                             <h4>Designer/Developer</h4>
                             <h5><a href="diff.php">The Difference Catering Website</a></h5></i>
                         </div>
                     </article>  
                     <article class="port">
-                   		<a href="icoach.php"><img src="img/port-icoach.jpg" alt="iCoach Rugby"></a>                    
+                   		<a href="icoach.php"><img src="img/port-icoach.jpg" alt="iCoach Rugby" /></a>                    
                         <div class="header">
                             <h4>Designer/Front-End Developer</h4>
                             <h5><a href="icoach.php">iCoach Rugby App/Tool</a></h5></i>
                         </div>
                     </article>
                      <article class="port">
-                   		 <a href="surveys.php"><img src="img/port-survey.jpg" alt="Airport Survey"></a>
+                   		 <a href="surveys.php"><img src="img/port-survey.jpg" alt="Airport Survey" /></a>
                          <div class="header">
                             <h4>Designer/Developer</h4>
                             <h5><a href="surveys.php">Mobile Feedback Systems</a></h5></i>
                         </div>
                     </article>                     
                     <article class="port">
-                        <a href="infield.php"><img src="img/port-infield.jpg" alt="Infield"></a>                     
+                        <a href="infield.php"><img src="img/port-infield.jpg" alt="Infield" /></a>                     
                         <div class="header">
                             <h4>Designer/Developer</h4>
                             <h5><a href="infield.php">Infield Marketing Website</a></h5></i>
                         </div>
                     </article>
                     <article class="port">
-                    	<a href="email.php"><img src="img/port-email.jpg" alt="Flipmind Email"></a>                    
+                    	<a href="email.php"><img src="img/port-email.jpg" alt="Flipmind Email" /></a>                    
                         <div class="header">
                             <h4>Designer/Developer</h4>
                             <h5><a href="email.php">Flipmind Email Campaign</a></h5></i>
                         </div>
                     </article>
                    <article class="port">
-                        <a href="airport.php"><img src="img/port-airport.jpg" alt="Airport"></a>                   
+                        <a href="airport.php"><img src="img/port-airport.jpg" alt="Airport" /></a>                   
                         <div class="header">
                             <h4>Developer</h4>
                             <h5><a href="airport.php">Auckland Airport Mobile Systems</a></h5></i>
                         </div>
                     </article>               
                     <article class="port">
-                        <a href="flipmind.php"><img src="img/port-flipmind.jpg" alt="Flipmind"></a>                    
+                        <a href="flipmind.php"><img src="img/port-flipmind.jpg" alt="Flipmind" /></a>                    
                         <div class="header">
                             <h4>Designer/Developer</h4>
                             <h5><a href="flipmind.php">Flipmind Business Marketing Hub</a></h5></i>
@@ -115,7 +109,7 @@
                     </article>
     
                     <article class="port">
-                   		 <a href="houseco.php"><img src="img/port-house.jpg" alt="The House Co"></a>                    
+                   		 <a href="houseco.php"><img src="img/port-house.jpg" alt="The House Co" /></a>                    
                         <div class="header">
                             <h4>Designer/Developer</h4>
                             <h5><a href="houseco.php">The House Company Website</a></h5></i>
@@ -125,7 +119,7 @@
 
 
                     <article class="port">
-                    	<a href="dave.php"><img src="img/port-dave.jpg" alt="Dave Van Rijk"></a>                    
+                    	<a href="dave.php"><img src="img/port-dave.jpg" alt="Dave Van Rijk" /></a>                    
                         <div class="header">
                             <h4>Developer</h4>
                             <h5><a href="dave.php">Dave Van Rijk E-Commerce Site</a></h5></i>
@@ -153,7 +147,7 @@
                 <h2>I'm a Front-End Web Developer specializing in HTML5, CSS3 and Javascript</h2>      
                 <div class="half technical">
                 <h3>Technical Skills</h3>
-                <hr class="light">
+                <hr class="light" />
                 <div class="graph">
                 <div class="cube eight">
                     <div class="topFace"><div></div></div>
@@ -217,10 +211,10 @@
             </div>
            	<article class="half form home">
             <h3>Bio</h3>
-				<hr class="light">
-                <p>Hi my name is Stuart McPherson my specialities are HTML5, CSS3 and Javascript, I love developing websites with a clean and inventive user experience. While I am no fully skilled back-end developer I do have experience in Server-side .NET & PHP development and even once worked as a Graphic Designer.</p>                        
-                <p>After obtaining a Bachelor of Informations Systems back in 2002, I worked developing sites in .NET before deciding to focus on UI & Design. I went on to complete a Diploma in Digital Media at Media Design School, in the process receiving industry awards in both Design & Development for my work.</p>                
-                <p>I have a keen eye for aesthetics & usability something that shows in my work and also enjoy to researching to keep up with the latest methods & technologies.</p>
+				<hr class="light" />
+                <p>Hi my name is Stuart McPherson my specialties are HTML5, CSS3 and Javascript, I love developing websites with a clean and inventive user experience. While I am no fully skilled back-end developer I do have experience in Server-side .NET &amp; PHP development and even once worked as a Graphic Designer.</p>                        
+                <p>After obtaining a Bachelor of Information Systems back in 2002, I worked developing sites in .NET before deciding to focus on UI &amp; Design. I went on to complete a Diploma in Digital Media at Media Design School, in the process receiving industry awards in both Design &amp; Development for my work.</p>                
+                <p>I have a keen eye for aesthetics &amp; usability something that shows in my work and also enjoy to researching to keep up with the latest methods &amp; technologies.</p>
                 <p>When I'm not crafting websites, I can be found on a found on a football ground or hiking in the wilderness.</p>            
             </article>
             </section>           
@@ -231,26 +225,17 @@
             <div class="half">
                     		<h1>I would like to hear about your opportunity</h1>
                             <h3>Fill Out the contact form or contact me via the options below</h3>                                                 
-                     	    <h4><a aria-hidden="true" data-icon="&#xe00e;" href="mailto:me@sjmcpherson.com"> me@sjmcpherson.com</a></h4>
-                            <h4><a aria-hidden="true" data-icon="&#xe004;" href="tel:021-733996"> 021-733996</a></h4>
-                            <h4><a aria-hidden="true" data-icon="&#xe00d;" href="https://twitter.com/sjmcpherso"> @sjmcpherso</a></h4>
-                            <h4><a aria-hidden="true" data-icon="&#xe002;" href="http://nz.linkedin.com/pub/stuart-mcpherson"> LinkedIn Profile</a></h4>
+                     	    <h4><a aria-hidden="true" data-icon="" href="mailto:me@sjmcpherson.com"> me@sjmcpherson.com</a></h4>
+                            <h4><a aria-hidden="true" data-icon="" href="tel:021-733996"> 021-733996</a></h4>
+                            <h4><a aria-hidden="true" data-icon="" href="https://twitter.com/sjmcpherso"> @sjmcpherso</a></h4>
+                            <h4><a aria-hidden="true" data-icon="" href="http://nz.linkedin.com/pub/stuart-mcpherson"> LinkedIn Profile</a></h4>
         	</div>                
 			<div class="form half">                               
                                <h3>Contact Form</h3>
-                               <hr class="light">
+                               <hr class="light" />
 
 
                                <form id="cform" class="cform" method="post" action="process.php">
-                               <?php 								
-                                //init variables
-                                $cf = array();
-                                $sr = false;
-                                if(isset($_SESSION['cf_returndata'])){
-                                    $cf = $_SESSION['cf_returndata'];
-                                    $sr = true;
-                                }
-                                ?>
                                 <ul id="errors" class="forminfo <?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
                                     <li id="info">There were some problems with your form submission:</li>
                                     <?php 
@@ -268,11 +253,11 @@
                                     <h4>I will endeavor get back to you soon</h4>
                                </div>
                                <fieldset>
-                               <label for="name"><span>*</span>Name:</label><input type="text" name="name" required id="name" placeholder="your name">                               
-                               <label for="email"><span>*</span>Email:</label><input type="email" name="email" required id="email" placeholder="your email">
-                               <label for="phone">Phone:</label><input type="text" name="phone" id="phone" placeholder="your phone number">
-                               <label for="business">Business:</label><input type="text" name="business" id="business" placeholder="name of your business">
-                               <label for="message"><span>*</span>Message:</label><textarea required id="message" name="message" placeholder="your message"></textarea>
+                               <label for="name"><span>*</span>Name:</label><input type="name" value="" name="name" required="required" id="name" placeholder="your name" />                               
+                               <label for="email"><span>*</span>Email:</label><input type="email" value="" name="email" required="required" id="email" placeholder="your email" />
+                               <label for="phone">Phone:</label><input type="tel" name="phone" value="" id="phone" placeholder="your phone number" />
+                               <label for="business">Business:</label><input type="text" value="" name="business" id="business" placeholder="name of your business" />
+                               <label for="message"><span>*</span>Message:</label><textarea required="required" id="message" name="message" placeholder="your message"></textarea>
                                <button type="submit" id="submit" class="button"  form="contact-form" value="send message">send message</button> 
                                </fieldset>
                                </form>

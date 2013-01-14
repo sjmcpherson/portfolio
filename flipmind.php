@@ -1,5 +1,4 @@
-<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
@@ -12,12 +11,7 @@
 <title>Portfolio of Stuart McPherson</title>
 <!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;">
-<meta name="viewport" content="width=device-width">
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<link rel="shortcut icon" href="icon/favicon.ico">
-<link rel="apple-touch-icon" href="icon/touch-icon-iphone.png" />
-<link rel="apple-touch-icon" sizes="72x72" href=icon/"touch-icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="icon/touch-icon-iphone4.png" />
 <link href="css/zgo8syp-d.css" rel="stylesheet">
 <link href="css/fdb0guo-d.css" rel="stylesheet">
 <?php include "lessphp-call.php" ?>
@@ -59,14 +53,14 @@
 <!-- InstanceBeginEditable name="content" -->
 	<article class="detail">
 		<div class="heroimages">
-            	<img class="headimage" src="img/flipmind-imac.jpg" alt="Flipmind">
-       	<img class="iphone" src="img/flipmind-iphone.png" alt="Flipmind">
+            	<img class="headimage" src="img/flipmind-imac.jpg" alt="Flipmind" />
+       	<img class="iphone" src="img/flipmind-iphone.png" alt="Flipmind" />
 		</div>
 
         <div class="side">
       	<h1>Flipmind Business Marketing Hub</h1>  
-        <hr class="light">       
-        <p>Design & development for Flipmind marketing hub. Given full responsibilty to manage the development of flipmind first reference for potenial clients. Integrated with Umbraco for Content Mangement</p> 
+        <hr class="light" />       
+        <p>Design &amp; development for Flipmind marketing hub. Given full responsibilty to manage the development of flipmind first reference for potenial clients. Integrated with Umbraco for Content Mangement</p> 
         <h5>Skills/Technologies Used</h5>
         <ul>
         <li>CSS3/HTML5</li>
@@ -78,10 +72,10 @@
         <li>Rich Snippets</li>
         </ul>
         <h4>Visit the Website <a target="_blank" class="hlink" href="http://www.flipmind.co.nz">www.flipmind.com</a></h4>
-        <hr>
+        <hr />
         </div>  
         <div class="auximages">
-            <img src="img/flipmind-aux1.jpg" alt="Flipmind">
+            <img src="img/flipmind-aux1.jpg" alt="Flipmind" />
         </div>
     </article>
 

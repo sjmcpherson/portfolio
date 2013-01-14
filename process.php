@@ -41,11 +41,13 @@ if( isset($_POST) ){
 		$errors[] = "You have not entered a message";
 	}
 	//validate message is greater than 20 charcters
-	elseif(strlen($message) < 20){
-		$formok = false;
-		$errors[] = "Your message must be greater than 20 characters";
-	}
-
+	//elseif(strlen($message) < 20){
+	//	$formok = false;
+	//	$errors[] = "Your message must be greater than 20 characters";
+	//}
+	echo $email;
+	echo "Set";
+	echo $formok;	
 	//send email if all is ok
 	if($formok){
 		$headers = "From: website@website.com" . "\r\n";
@@ -59,8 +61,8 @@ if( isset($_POST) ){
 					  <p><strong>Message: </strong> {$message} </p>
 					  <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>";
 		
-		mail("stuart.mcpherson@flipmind.com","New Enquiry",$emailbody,$headers);
-		
+		mail("email@sjmcpherson.com","New Enquiry",$emailbody,$headers);
+		echo "FORM SENT";
 	}
 	
 	//what we need to return back to our form
@@ -75,14 +77,14 @@ if( isset($_POST) ){
 		'form_ok' => $formok,
 		'errors' => $errors
 	);
-		
-	//echo $_SERVER['HTTP_X_REQUESTED_WITH'];
+	echo "END";	
+	echo $_SERVER['HTTP_X_REQUESTED_WITH'];
 	//if this is not an ajax request
 	//if(empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest'){
 		//set session variables
 		//session_start();
 		$_SESSION['cf_returndata'] = $returndata;
-			echo "Finish";
+			//echo "Finish";
 		//redirect back to form
 		//header('location: ' . $_SERVER['HTTP_REFERER']);
 	//}

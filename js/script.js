@@ -53,21 +53,21 @@ $(function(){
 	formSubmitButton.bind('click',function(){
 		var formok = true,
 			errors = [];
-			
+		
 		formElements.each(function(){
+					
 			var name = this.name,
 				nameUC = name.ucfirst(),
 				value = this.value,
 				placeholderText = this.getAttribute('placeholder'),
 				type = this.getAttribute('type'), //get type old school way
-				isRequired = this.getAttribute('required'),
+				isRequired = $(this).attr("required"),
 				minLength = this.getAttribute('data-minlength');
-			
+					
 			//if HTML5 formfields are supported			
 			if( (this.validity) && !this.validity.valid ){
-				formok = false;
-				
-				console.log(this.validity);
+				formok = false;				
+				//console.log(this.validity);
 				
 				//if there is a value missing
 				if(this.validity.valueMissing){
@@ -83,13 +83,13 @@ $(function(){
 			}
 			
 			//if this is a required element
-			if(isRequired){	
+			if(isRequired == "required"){	
 				//if HTML5 input required attribute is not supported
 				if(!Modernizr.input.required){
 					if(value == placeholderText){
 						this.focus();
 						formok = false;
-						errors.push(nameUC + errorMessages.required);
+						errors.push("<strong>"+nameUC+"</strong>" + errorMessages.required);
 						return false;
 					}
 				}

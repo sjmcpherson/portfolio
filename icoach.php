@@ -1,5 +1,4 @@
-<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
@@ -12,12 +11,7 @@
 <title>Portfolio of Stuart McPherson</title>
 <!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;">
-<meta name="viewport" content="width=device-width">
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<link rel="shortcut icon" href="icon/favicon.ico">
-<link rel="apple-touch-icon" href="icon/touch-icon-iphone.png" />
-<link rel="apple-touch-icon" sizes="72x72" href=icon/"touch-icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="icon/touch-icon-iphone4.png" />
 <link href="css/zgo8syp-d.css" rel="stylesheet">
 <link href="css/fdb0guo-d.css" rel="stylesheet">
 <?php include "lessphp-call.php" ?>
@@ -59,15 +53,15 @@
 <!-- InstanceBeginEditable name="content" -->
 	<article class="detail">
 		<div class="heroimages">
-            	<img class="headimage" src="img/icoach-imac.jpg" alt="iCoach Rugby">
-       	<img class="iphone" src="img/icoach-iphone.png" alt="iCoach Rugby">
+            	<img class="headimage" src="img/icoach-imac.jpg" alt="iCoach Rugby" />
+       	<img class="iphone" src="img/icoach-iphone.png" alt="iCoach Rugby" />
 		</div>
 
         <div class="side">
       	<h1>iCoach Rugby Statistics System</h1>  
-		<h2>iCoach Public Website & Team Management Tool</h2>
-        <hr class="light">       
-        <p>Design & javascript development for iCoach Rugby marketing site & its team management tool. Overseeing the initial CSS/HTML production, before taking full responsibility of project from interfacing with client and providing estimates to javascript & C#.NET development. </p> 
+		<h2>iCoach Public Website &amp; Team Management Tool</h2>
+        <hr class="light" />       
+        <p>Design &amp; javascript development for iCoach Rugby marketing site &amp; its team management tool. Overseeing the initial CSS/HTML production, before taking full responsibility of project from interfacing with client and providing estimates to javascript &amp; C#.NET development. </p> 
         <h5>Skills/Technologies Used</h5>
         <ul>
         <li>CSS/HTML</li>
@@ -78,8 +72,8 @@
         <h4>Visit the Website <a target="_blank" class="hlink" href="http://www.i-coachrugby.com">www.i-coachrugby.com</a></h4>                             
         
         <h2>iCoach Rugby iCoach/Android App</h2>
-        <hr class="light">
-        <p>Designed & developed the iCoach Rugby mobile app using the Javascript framework Titanium Appcelerator for iOS & Android platforms. Interfacing with directors and testers for app updates.</p>
+        <hr class="light" />
+        <p>Designed &amp; developed the iCoach Rugby mobile app using the Javascript framework Titanium Appcelerator for iOS &amp; Android platforms. Interfacing with directors and testers for app updates.</p>
         <h5>Skills/Technologies Used</h5>       
         <ul>
         <li>Titanium Appcelertor</li>
@@ -89,13 +83,13 @@
         </ul> 
         
         <div class="stores">
-        <a href="https://play.google.com/store/apps/details?id=com.flipmind.icoach&hl=en"><img src="img/appstore_android.png" alt="App Store"></a> <a href="http://itunes.apple.com/nz/app/i-coach-rugby-your-rugby-team/id440654748?mt=8"><img src="img/appstore_ios.png" alt="App Store"></a> 
+        <a href="https://play.google.com/store/apps/details?id=com.flipmind.icoach&amp;hl=en"><img src="img/appstore_android.png" alt="App Store" /></a> <a href="http://itunes.apple.com/nz/app/i-coach-rugby-your-rugby-team/id440654748?mt=8"><img src="img/appstore_ios.png" alt="App Store" /></a> 
         </div>
-        <hr>
+        <hr />
         </div>  
         <div class="auximages">
-                <img src="img/icoach-aux1.jpg" alt="iCoach Rugby">
-                <img src="img/icoach-aux2.jpg" alt="iCoach Rugby">
+                <img src="img/icoach-aux1.jpg" alt="iCoach Rugby" />
+                <img src="img/icoach-aux2.jpg" alt="iCoach Rugby" />
         </div>
     </article>
 

@@ -1,5 +1,4 @@
-<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
@@ -12,12 +11,7 @@
 <title>Portfolio of Stuart McPherson</title>
 <!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;">
-<meta name="viewport" content="width=device-width">
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<link rel="shortcut icon" href="icon/favicon.ico">
-<link rel="apple-touch-icon" href="icon/touch-icon-iphone.png" />
-<link rel="apple-touch-icon" sizes="72x72" href=icon/"touch-icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="icon/touch-icon-iphone4.png" />
 <link href="css/zgo8syp-d.css" rel="stylesheet">
 <link href="css/fdb0guo-d.css" rel="stylesheet">
 <?php include "lessphp-call.php" ?>
@@ -59,13 +53,13 @@
 <!-- InstanceBeginEditable name="content" -->
 	<article class="detail">
     	<div class="heroimages">
-            <img class="headimage" src="img/houseco-imac.jpg" alt="The House Co">
+            <img class="headimage" src="img/houseco-imac.jpg" alt="The House Co" />
 
         </div>
         
         <div class="side">
 		<h1>The House Company Website</h1>       
-        <p>Designed & developed a marketing site working closely with The House Company to build a site which showcases the quality of their homes.</p>
+        <p>Designed &amp; developed a marketing site working closely with The House Company to build a site which showcases the quality of their homes.</p>
         
         <p>The site displays a full screen homepage design, uses the Umbraco content management system to give the client complete access to the content and utilizes cloud computing with  Microsoft Azure.</p>
             
@@ -82,10 +76,10 @@
         <h4>Visit the Website <a target="_blank" class="hlink" href="http://www.thehouseco.co.nz">www.thehouseco.co.nz</a></h4>
     
         <!--End mc_embed_signup-->
-        <hr>
+        <hr />
         </div>
         <div class="auximages">
-                <img src="img/houseco-aux1.jpg" alt="Email Marketing">
+                <img src="img/houseco-aux1.jpg" alt="Email Marketing" />
         </div>
     </article>
 

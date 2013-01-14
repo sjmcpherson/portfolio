@@ -1,5 +1,4 @@
-<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
@@ -12,12 +11,7 @@
 <title>Portfolio of Stuart McPherson</title>
 <!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;">
-<meta name="viewport" content="width=device-width">
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<link rel="shortcut icon" href="icon/favicon.ico">
-<link rel="apple-touch-icon" href="icon/touch-icon-iphone.png" />
-<link rel="apple-touch-icon" sizes="72x72" href=icon/"touch-icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="icon/touch-icon-iphone4.png" />
 <link href="css/zgo8syp-d.css" rel="stylesheet">
 <link href="css/fdb0guo-d.css" rel="stylesheet">
 <?php include "lessphp-call.php" ?>
@@ -59,14 +53,14 @@
 <!-- InstanceBeginEditable name="content" -->
 	<article class="detail">
 		<div class="heroimages">
-            	<img class="headimage" src="img/diff-imac.jpg" alt="TheDifference">
+            	<img class="headimage" src="img/diff-imac.jpg" alt="TheDifference" />
 		</div>
         
         <div class="side">
 		<h1>The Difference Catering</h1>       
-        <p>Designed & developed a simple & elegant marketing site for The Difference Catering.</p>
+        <p>Designed &amp; developed a simple &amp; elegant marketing site for The Difference Catering.</p>
         
-        <p>Utilized Search Engine Optimizing techniques to take them to the top of Google rankings(<a target="_blank" href="http://www.google.co.nz/search?hl=en&tbo=d&output=search&sclient=psy-ab&q=catering+auckland&btnK=#hl=en&sugexp=les%3B&gs_rn=1&gs_ri=serp&pq=catering%20auckland&cp=13&gs_id=12&xhr=t&q=auckland+catering&pf=p&tbo=d&biw=1920&bih=985&sclient=psy-ab&oq=auckland+cate&gs_l=&pbx=1&fp=1&bpcl=40096503&bav=on.2,or.r_gc.r_pw.r_qf.&cad=b&sei=FIHqUPaDH5CyiQeo-oHoBw">See Here</a>) in a highly competitive market </p>        
+        <p>Utilized Search Engine Optimizing techniques to take them to the top of Google rankings(<a target="_blank" href="http://www.google.co.nz/search?hl=en&amp;tbo=d&amp;output=search&amp;sclient=psy-ab&amp;q=catering+auckland&amp;btnK=#hl=en&amp;sugexp=les%3B&amp;gs_rn=1&amp;gs_ri=serp&amp;pq=catering%20auckland&amp;cp=13&amp;gs_id=12&amp;xhr=t&amp;q=auckland+catering&amp;pf=p&amp;tbo=d&amp;biw=1920&amp;bih=985&amp;sclient=psy-ab&amp;oq=auckland+cate&amp;gs_l=&amp;pbx=1&amp;fp=1&amp;bpcl=40096503&amp;bav=on.2,or.r_gc.r_pw.r_qf.&amp;cad=b&amp;sei=FIHqUPaDH5CyiQeo-oHoBw">See Here</a>) in a highly competitive market </p>        
         
         <h5>Skills/Technologies Used</h5>       
         <ul>
@@ -77,7 +71,7 @@
         <h4>Visit the Website <a target="_blank" class="hlink" href="http://www.thedifference.co.nz">www.thedifference.co.nz</a></h4>
     
         <!--End mc_embed_signup-->
-        <hr>
+        <hr />
         </div>
         <div class="auximages">
 

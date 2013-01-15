@@ -1,5 +1,4 @@
-<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!DOCTYPE html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
@@ -12,12 +11,7 @@
 <title>Portfolio of Stuart McPherson</title>
 <!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;">
-<meta name="viewport" content="width=device-width">
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<link rel="shortcut icon" href="icon/favicon.ico">
-<link rel="apple-touch-icon" href="icon/touch-icon-iphone.png" />
-<link rel="apple-touch-icon" sizes="72x72" href=icon/"touch-icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="icon/touch-icon-iphone4.png" />
 <link href="css/zgo8syp-d.css" rel="stylesheet">
 <link href="css/fdb0guo-d.css" rel="stylesheet">
 <?php include "lessphp-call.php" ?>
@@ -59,13 +53,13 @@
 <!-- InstanceBeginEditable name="content" -->
 	<article class="detail">
     	<div class="heroimages">
-            	<img class="headimage" src="img/survey-galphone.jpg" alt="jQuery Surveys">
-       	<img class="iphone" src="img/countdown-iphone.png" alt="iCoach Rugby">
+            	<img class="headimage" src="img/survey-galphone.jpg" alt="jQuery Surveys" />
+       	<img class="iphone" src="img/countdown-iphone.png" alt="iCoach Rugby" />
         </div>
       <div class="side">            
             <h1>Customer Mobile Feedback Systems</h1>
-      		<hr class="light">            
-            <p>Developed a smart phone customer feedback survey for a number of major retailers, intended for smart phones & to be easily skinable. Customers scan a QR code via handout after a enabling the client to obtain key information from customers, information could be processed and interpreted.</p>
+      		<hr class="light" />            
+            <p>Developed a smart phone customer feedback survey for a number of major retailers, intended for smart phones &amp; to be easily skinable. Customers scan a QR code via handout after a enabling the client to obtain key information from customers, information could be processed and interpreted.</p>
             <h5>Skills/Technologies Used</h5>       
             <ul>
             <li>CSS3/HTML5</li>
@@ -73,16 +67,16 @@
             <li>jQuery/jQuery Mobile</li>
             </ul>    
             
-            <img src="img/countdown-qr.png" alt="Countdown Survey">
+            <img src="img/countdown-qr.png" alt="Countdown Survey" />
             <h4>Scan the Above <i class="icon-circle-arrow-up"></i> QR code from your Smart Device</h4>
             <h5>OR</h5>
             <h4>Visit <i class="icon-circle-arrow-right"></i> <a href="http://countdown.pocketvine.com/milford/" class="default">http://countdown.pocketvine.com/milford/</a></h4>
             
-        <hr>
+        <hr />
         
         </div>
                 <div class="auximages">
-            <img src="img/airport-aux1.jpg" alt="Flipmind">
+            <img src="img/airport-aux1.jpg" alt="Flipmind" />
         </div>
     </article>
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
@@ -21,8 +21,7 @@
 
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
- 
-</head>
+ </head>
 <body>
 <header>
 <div class="wrap">
@@ -30,23 +29,18 @@
 		<a href="/">Stuart McPherson</a>
 		<h5>Front End Web Developer</h5>
 </div>			
-<ul class="icons">
-<li><a href="mailto:me@sjmcpherson.com" class="fs1" aria-hidden="true" data-icon="&#xe00f;"></a></li>
-<li><a href="http://nz.linkedin.com/pub/stuart-mcpherson" aria-hidden="true" target="_blank" data-icon="&#xe002;"></a></li>
-<li><a href="https://twitter.com/sjmcpherso" aria-hidden="true" target="_blank" data-icon="&#xe001;"></a></li>
-<!--<li><a href="mailto:me@sjmcpherson.com"><i class="icon-envelope icon-small"></i></a></li>
-<li><a href="http://nz.linkedin.com/pub/stuart-mcpherson"><i class="icon-linkedin icon-small"></i></a></li>
-<li><a href="https://twitter.com/sjmcpherso"><i class="icon-twitter icon-small"></i></a></li>-->
-</ul>
-<nav>
-
-<ul class="menu">
-<li><a href="index.php">my work</a></li>
-<li><a href="index.php#about">about me</a></li>
-<li><a href="index.php#contact">say hello</a></li>
-</ul>
-
-</nav>
+    <ul class="icons">
+        <li><a href="mailto:me@sjmcpherson.com" class="fs1" aria-hidden="true" data-icon="&#xe00f;"></a></li>
+        <li><a href="nz.linkedin.com/in/stuartmcpherson" aria-hidden="true" target="_blank" data-icon="&#xe002;"></a></li>
+        <li><a href="https://twitter.com/sjmcpherso" aria-hidden="true" target="_blank" data-icon="&#xe001;"></a></li>
+    </ul>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.php">my work</a></li>
+            <li><a href="index.php#about">about me</a></li>
+            <li><a href="index.php#contact">say hello</a></li>
+        </ul>
+    </nav>
 </div>
 </header>
 <section class="wrap main">

@@ -1,5 +1,4 @@
-<!DOCTYPE html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
@@ -12,12 +11,7 @@
 <title>Portfolio of Stuart McPherson</title>
 <!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;">
-<meta name="viewport" content="width=device-width">
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<link rel="shortcut icon" href="icon/favicon.ico">
-<link rel="apple-touch-icon" href="icon/touch-icon-iphone.png" />
-<link rel="apple-touch-icon" sizes="72x72" href=icon/"touch-icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="icon/touch-icon-iphone4.png" />
 <link href="css/zgo8syp-d.css" rel="stylesheet">
 <link href="css/fdb0guo-d.css" rel="stylesheet">
 <?php include "lessphp-call.php" ?>
@@ -27,8 +21,7 @@
 
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
- 
-</head>
+ </head>
 <body>
 <header>
 <div class="wrap">
@@ -36,23 +29,18 @@
 		<a href="/">Stuart McPherson</a>
 		<h5>Front End Web Developer</h5>
 </div>			
-<ul class="icons">
-<li><a href="mailto:me@sjmcpherson.com" class="fs1" aria-hidden="true" data-icon="&#xe00f;"></a></li>
-<li><a href="http://nz.linkedin.com/pub/stuart-mcpherson" aria-hidden="true" target="_blank" data-icon="&#xe002;"></a></li>
-<li><a href="https://twitter.com/sjmcpherso" aria-hidden="true" target="_blank" data-icon="&#xe001;"></a></li>
-<!--<li><a href="mailto:me@sjmcpherson.com"><i class="icon-envelope icon-small"></i></a></li>
-<li><a href="http://nz.linkedin.com/pub/stuart-mcpherson"><i class="icon-linkedin icon-small"></i></a></li>
-<li><a href="https://twitter.com/sjmcpherso"><i class="icon-twitter icon-small"></i></a></li>-->
-</ul>
-<nav>
-
-<ul class="menu">
-<li><a href="index.php">my work</a></li>
-<li><a href="index.php#about">about me</a></li>
-<li><a href="index.php#contact">say hello</a></li>
-</ul>
-
-</nav>
+    <ul class="icons">
+        <li><a href="mailto:me@sjmcpherson.com" class="fs1" aria-hidden="true" data-icon="&#xe00f;"></a></li>
+        <li><a href="nz.linkedin.com/in/stuartmcpherson" aria-hidden="true" target="_blank" data-icon="&#xe002;"></a></li>
+        <li><a href="https://twitter.com/sjmcpherso" aria-hidden="true" target="_blank" data-icon="&#xe001;"></a></li>
+    </ul>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.php">my work</a></li>
+            <li><a href="index.php#about">about me</a></li>
+            <li><a href="index.php#contact">say hello</a></li>
+        </ul>
+    </nav>
 </div>
 </header>
 <section class="wrap main">

@@ -676,9 +676,9 @@ header {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-box-shadow: 0 2px 5px 0.4;
-  -moz-box-shadow: 0 2px 5px 0.4;
-  box-shadow: 0 2px 5px 0.4;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
 }
@@ -766,7 +766,7 @@ nav ul li a {
   display: block;
   padding: 10px 1.2em;
   margin: 0 8px;
-  color: #bbb;
+  color: #ccc;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -khtml-border-radius: 6px;
@@ -780,48 +780,51 @@ nav ul li a {
   line-height: 1em;
   font-weight: 400;
   font-size: 1.15em;
-  -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 2px 3px rgba(0,0,0,0.8) 12px 0.25;
-  -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 2px 3px rgba(0,0,0,0.8) 12px 0.25;
-  box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 2px 3px rgba(0,0,0,0.8) 12px 0.25;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 2px 3px rgba(0,0,0,0.8) 12px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 2px 3px rgba(0,0,0,0.8) 12px rgba(0,0,0,0.25);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 2px 3px rgba(0,0,0,0.8) 12px rgba(0,0,0,0.25);
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2), 0 2px 3px rgba(0,0,0,0.8);
   -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2), 0 2px 3px rgba(0,0,0,0.8);
   box-shadow: inset 0 1px 1px rgba(255,255,255,0.2), 0 2px 3px rgba(0,0,0,0.8);
   cursor: pointer;
+  background-color: rgba(200,200,200,0.1);
 }
 nav ul li a:hover {
-  -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 0 5px rgba(0,0,0,0.1) 12px 0.25;
-  -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 0 5px rgba(0,0,0,0.1) 12px 0.25;
-  box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 0 5px rgba(0,0,0,0.1) 12px 0.25;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 0 5px rgba(0,0,0,0.1) 12px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 0 5px rgba(0,0,0,0.1) 12px rgba(0,0,0,0.25);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 0 5px rgba(0,0,0,0.1) 12px rgba(0,0,0,0.25);
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2), 0 0 5px rgba(0,0,0,0.1);
   -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2), 0 0 5px rgba(0,0,0,0.1);
   box-shadow: inset 0 1px 1px rgba(255,255,255,0.2), 0 0 5px rgba(0,0,0,0.1);
   color: #fff;
+  background-color: rgba(255,255,255,0.1);
 }
 nav ul li a:active,
 nav ul li a.current {
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.5) 0 0 5px rgba(0,0,0,0.2) 12px 0.25;
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.5) 0 0 5px rgba(0,0,0,0.2) 12px 0.25;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.5) 0 0 5px rgba(0,0,0,0.2) 12px 0.25;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.5) 0 0 5px rgba(0,0,0,0.2) 12px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.5) 0 0 5px rgba(0,0,0,0.2) 12px rgba(0,0,0,0.25);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.5) 0 0 5px rgba(0,0,0,0.2) 12px rgba(0,0,0,0.25);
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 0 5px rgba(0,0,0,0.2);
   -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 0 5px rgba(0,0,0,0.2);
   box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 0 5px rgba(0,0,0,0.2);
-  color: #777;
+  color: #aaa;
   text-shadow: 0px 0px 0px #000;
+  background-color: rgba(0,0,0,0.1);
 }
 ul.icons {
   padding: 1px 5px 0 15px;
   float: left;
   margin: 13px 0 0 22px;
   border-left: 1px solid #222;
-  -webkit-box-shadow: 1px 0 0px rgba(255,255,255,0.1) inset 0px 12px 0.25;
-  -moz-box-shadow: 1px 0 0px rgba(255,255,255,0.1) inset 0px 12px 0.25;
-  box-shadow: 1px 0 0px rgba(255,255,255,0.1) inset 0px 12px 0.25;
+  -webkit-box-shadow: 1px 0 0px rgba(255,255,255,0.1) inset 0px 12px rgba(0,0,0,0.25);
+  -moz-box-shadow: 1px 0 0px rgba(255,255,255,0.1) inset 0px 12px rgba(0,0,0,0.25);
+  box-shadow: 1px 0 0px rgba(255,255,255,0.1) inset 0px 12px rgba(0,0,0,0.25);
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   -webkit-box-shadow: 1px 0 0px rgba(255,255,255,0.1) inset, transparent 0 0 0;
@@ -850,7 +853,7 @@ nav a:hover,
 ul.icons li a:hover,
 button:hover {
   color: #fff;
-  text-shadow: 0px 0px 10px #fff;
+  text-shadow: 0px 0px 12px #fff;
 }
 .portfolio {
   padding: 30px 0 10px 0;
@@ -868,9 +871,9 @@ button:hover {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #ccc;
-  -webkit-box-shadow: 0px 2px 5px 0.2;
-  -moz-box-shadow: 0px 2px 5px 0.2;
-  box-shadow: 0px 2px 5px 0.2;
+  -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   float: left;
@@ -908,9 +911,9 @@ button:hover {
   -webkit-filter: blur(5px);
 }
 .port.active {
-  -webkit-box-shadow: 0px 5px 15px 0.4;
-  -moz-box-shadow: 0px 5px 15px 0.4;
-  box-shadow: 0px 5px 15px 0.4;
+  -webkit-box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   z-index: 100;
@@ -1119,9 +1122,9 @@ textarea {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-box-shadow: 1px 1px 8px rgba(0,0,0,0.15) inset 0px 12px 0.25;
-  -moz-box-shadow: 1px 1px 8px rgba(0,0,0,0.15) inset 0px 12px 0.25;
-  box-shadow: 1px 1px 8px rgba(0,0,0,0.15) inset 0px 12px 0.25;
+  -webkit-box-shadow: 1px 1px 8px rgba(0,0,0,0.15) inset 0px 12px rgba(0,0,0,0.25);
+  -moz-box-shadow: 1px 1px 8px rgba(0,0,0,0.15) inset 0px 12px rgba(0,0,0,0.25);
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.15) inset 0px 12px rgba(0,0,0,0.25);
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   -webkit-box-shadow: 1px 1px 8px rgba(0,0,0,0.15) inset, transparent 0 0 0;
@@ -1233,9 +1236,9 @@ button {
   line-height: 1em;
   font-weight: normal;
   font-size: 1em;
-  -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 2px 3px rgba(0,0,0,0.8) 12px 0.25;
-  -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 2px 3px rgba(0,0,0,0.8) 12px 0.25;
-  box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 2px 3px rgba(0,0,0,0.8) 12px 0.25;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 2px 3px rgba(0,0,0,0.8) 12px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 2px 3px rgba(0,0,0,0.8) 12px rgba(0,0,0,0.25);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.2) 0 2px 3px rgba(0,0,0,0.8) 12px rgba(0,0,0,0.25);
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2), 0 2px 3px rgba(0,0,0,0.8);
@@ -1258,9 +1261,9 @@ button:hover {
   text-shadow: 0 0 6px;
 }
 button:active {
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3) 0 0 2px rgba(0,0,0,0.1) 12px 0.25;
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3) 0 0 2px rgba(0,0,0,0.1) 12px 0.25;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.3) 0 0 2px rgba(0,0,0,0.1) 12px 0.25;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3) 0 0 2px rgba(0,0,0,0.1) 12px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3) 0 0 2px rgba(0,0,0,0.1) 12px rgba(0,0,0,0.25);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.3) 0 0 2px rgba(0,0,0,0.1) 12px rgba(0,0,0,0.25);
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3), 0 0 2px rgba(0,0,0,0.1);
@@ -1286,6 +1289,7 @@ button:active {
   background-image: -ms-linear-gradient(top,#fe4444,#ff0000);
   background-image: linear-gradient(top,#fe4444,#ff0000);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@start',endColorstr='@stop',GradientType=0);
+  -ms-filter: gradient(start=#fe4444,end=);
   float: right;
   position: absolute;
   left: 3.5%;
@@ -1306,9 +1310,9 @@ button:active {
   display: block;
   height: 10px;
   line-height: 1em;
-  -webkit-box-shadow: inset 0 2px 1px rgba(255,255,255,0.4) 0px 12px 0.25;
-  -moz-box-shadow: inset 0 2px 1px rgba(255,255,255,0.4) 0px 12px 0.25;
-  box-shadow: inset 0 2px 1px rgba(255,255,255,0.4) 0px 12px 0.25;
+  -webkit-box-shadow: inset 0 2px 1px rgba(255,255,255,0.4) 0px 12px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0 2px 1px rgba(255,255,255,0.4) 0px 12px rgba(0,0,0,0.25);
+  box-shadow: inset 0 2px 1px rgba(255,255,255,0.4) 0px 12px rgba(0,0,0,0.25);
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
   -webkit-box-shadow: inset 0 2px 1px rgba(255,255,255,0.4), transparent 0 0 0;
@@ -1362,6 +1366,7 @@ button:active {
   background-image: -ms-linear-gradient(top,#83D186,#65c669);
   background-image: linear-gradient(top,#83D186,#65c669);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@start',endColorstr='@stop',GradientType=0);
+  -ms-filter: gradient(start=#83D186,end=);
   top: 22%;
 }
 #success.forminfo {

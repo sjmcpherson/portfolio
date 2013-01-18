@@ -54,10 +54,10 @@
 }
 
 .box-shadow (@x: 0px, @y: 0px, @blur: 12px, @alpha: 0.25){
-  @arguments: @x @y @blur rgba(0, 0, 0, @alpha);
-  -webkit-box-shadow: @arguments;
-  -moz-box-shadow:    @arguments;  
-  box-shadow:         @arguments;	
+  @values: @x @y @blur rgba(0,0,0,@alpha);
+  -webkit-box-shadow: @values;
+  -moz-box-shadow:    @values;  
+  box-shadow:         @values;	
 -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
 filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
 }
@@ -121,6 +121,7 @@ filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Col
     background-image: -ms-linear-gradient(@origin, @start, @stop);
     background-image: linear-gradient(@origin, @start, @stop);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@start', endColorstr='@stop',GradientType=0 );
+	-ms-filter: e("gradient(start=@{start},end=@{end})");
 }
 // Transformations //
 .skew(@angle_x:35deg, @angle_y:0deg)

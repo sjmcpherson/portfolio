@@ -1,4 +1,4 @@
-<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
@@ -107,10 +107,12 @@
 ><script type="text/javascript" src="js/selectivizr-min.js?ver=1.0.2"></script>
 <![endif]-->
 <!--<script src="js/less-1.3.1.min.js"></script>-->
+<script src="js/jquery.easing.1.3.js"></script>
 <script src="js/fdb0guo.js"></script>
 <script src="js/zgo8syp.js"></script>
 <script src="js/jquery-scroll-link.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery-box-fader.js"></script>
+
 <script src="js/script.js"></script>     
 <script src="js/controller.js"></script>  
         <script>

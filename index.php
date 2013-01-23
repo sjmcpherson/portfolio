@@ -230,19 +230,11 @@
 
 
                                <form id="cform" class="cform" method="post" action="process.php">
-                                <ul id="errors" class="forminfo <?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
+                                <ul id="errors" class="forminfo">
                                     <li id="info">There were some problems with your form submission:</li>
-                                    <?php 
-                                    if(isset($cf['errors']) && count($cf['errors']) > 0) :
-                                        foreach($cf['errors'] as $error) :
-                                    ?>
-                                    <li><?php echo $error ?></li>
-                                    <?php
-                                        endforeach;
-                                    endif;
-                                    ?>
+
                                 </ul>
-                                <div id="success" class="forminfo<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">
+                                <div id="success" class="forminfo">
                                 	<h3>Thank you for your message!</h3>
                                     <h4>I will endeavor get back to you soon</h4>
                                </div>

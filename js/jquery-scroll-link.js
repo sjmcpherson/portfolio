@@ -9,15 +9,21 @@ $(function(){
 				console.log(navElements.length)		
 			var curUrl = window.location.pathname;
 			var curFilename = curUrl.substring(curUrl.lastIndexOf('/')+1);	
-			
 		
 				function bindScroll(){
 					$(window).scroll(function(e){
-						//bodyScroll();
+						console.log("scroll");
+						setScrollTimer();
 						checkSelected($(window).scrollTop());
 					});					
 				}
+							
+				function setScrollTimer(){
+					unbindScroll();
+					scrollTimer = window.setTimeout(function(){bindScroll()}, 200);
+				}
 				
+			
 				bindScroll();
 				
 				function unbindScroll(){
@@ -64,16 +70,7 @@ $(function(){
 						
 				})			
 								
-				  function bodyScroll() {			
-						if (scrollTimer != -1)
-							clearTimeout(scrollTimer);
-				
-						scrollTimer = window.setTimeout("scrollFinished()", 500);
-				  }
-				
-					function scrollFinished() {
-							checkSelected($(window).scrollTop())
-					}
+
 				// Go through each section to see if it's at the top.
 				// if it is add an active class
 				function checkSelected(scrolledTo){					

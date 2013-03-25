@@ -1,0 +1,213 @@
+/*--[ Laptop & Desktop ]--------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1200px) {	
+    .port:nth-child(3n) { margin-right: 5px;}
+	.port:nth-child(3n-2) { margin-left: 5px;}  
+}
+/*--[ iPad Landscape and Older Desktop]----------------------------------------------------------------------*/
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    body {font-size:0.95em;}
+	.wrap {max-width: 970px;}    
+	
+    .port {width: 300px;}    
+    	.port img {width: 100%;}    
+    .port:nth-child(3n) { margin-right: 5px;}
+	.port:nth-child(3n-2) { margin-left: 5px;} 
+	
+	.detail .heroimages {height:600px;width:510px;} 
+	.detail .auximages{width:510px;} 
+   	.detail .side {padding-top: 20px;width: 385px;}   	
+	.headimage {top: 10px;}    
+	.iphone {width: 160px;top: 250px;right:0;}   
+	.half{width:455px;margin-right:50px;}	
+	.graph{height:180px;}
+}
+
+/*--[ 2 column - iPad portrait ]--------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+     body {font-size:0.9em;}
+    .wrap {max-width: 768px;}  
+	  
+     h1{font-size:2.5em;padding:10px 0 15px;}
+	 h2{font-size:1.8em;}
+    .port {width: 360px;}	 
+    .port img {}
+    .port .header{font-size: 1.1em;}
+	    .port:nth-child(2n) { margin-right: 5px;}
+	.port:nth-child(2n-3) { margin-left: 5px;}  
+	
+   	#logo a{margin:4px 0 0;} 	
+
+	nav ul {margin:0;}
+     nav ul li a{} 
+	
+    /* portfolio detail */
+    .detail {height: 460px;width: 750px; }    
+		.detail .side{padding-top: 5px;width: 300px;}   
+    	.detail .heroimages {height:460px;width:410px;} 
+			.detail .auximages{width:410px;} 
+    .headimage {left: 0px;top: 10px;width: 435px;}    
+	.iphone {top: 210px;width: 120px;	}
+    .detail h3 { font-size: 1.4em !important; }
+	
+	.half{width:360px;margin-right:40px;}
+	
+	.graph{height:140px;margin:220px 0 60px;}
+}
+
+/* 
+	1-column layout for smartphones
+*/
+
+@media only screen and (min-width: 620px) and (max-width: 767px) {
+     body {font-size:0.85em;}
+    .wrap {width:100%;padding:0 1%;}  
+	  
+	  h1{ font-size:1.8em; line-height: 1.1em;padding:0.1em 0 0.3em;} 
+	  h2{ font-size:1.6em; line-height: 1.125em;} 
+    .port {width: 48%;margin:10px 1% 0 1%;}	 
+    .port .header{font-size: 1.1em;}
+	    .port:nth-child(2n) {}
+	.port:nth-child(2n-3) {}  
+	
+   	#logo a{margin:4px 0 0;}
+		#logo h5 {left:10px;}
+
+	nav ul {margin:0px 8px 0 0;}
+     nav ul li a{padding:8px 15px 8px 15px;margin:0 4px;} 
+		ul.icons{padding:0 0 0 5px;margin:15px 0 0 8px;font-size:1.2em;}
+			ul.icons li a{margin:0 2px;}
+    /* portfolio detail */
+    .detail {height: 460px;width: 750px; }    
+		.detail .side{padding-top: 5px;width: 300px;}   
+    	.detail .heroimages {height:460px;width:400px;} 
+			.detail .auximages{width:400px;} 
+    .headimage {left: 0px;top: 10px;width: 400px;}    
+	.iphone {top: 210px;width: 110px;	}
+    .detail h3 { font-size: 1.4em !important; }
+	
+	.half{width: 100%;padding:10px 2% 0 2%;margin:0;}
+	
+	.graph{height:180px;width:100%;margin:180px auto 100px auto;width:480px;}
+}
+@media only screen and (max-width: 620px) {
+	body {font-size:0.95em;}
+	  h1{ font-size:1.9em; line-height: 1.2em;padding:0 0 0.2em;} 
+	  h2{ font-size:1.5em;} 
+	  h3{ font-size:1.3em;} 
+	  h4{ font-size:1.1em;}
+	  h5{ font-size:1.1em;}
+	  h6{ font-size:0.875em;}
+		p{font-size:1.1em}
+	header {padding:0;padding:0;position: fixed;margin:0;}		
+	header .wrap {height:100px;margin:0 auto;top:0;padding:0;}	
+	
+	.wrap {margin-left:auto;margin-right:auto;padding:15px 10px 0 10px;width:100%;}
+	
+	header.fix{margin:-50px 0 0 0;height:100px;}	
+		header.fix #logo a {margin-top:0px;}	
+	#logo a {font-size:2em;margin:5px 0 0 5px;float:left;}
+		#logo h5 {font-size:0.75em;top:38px;left:10px;}
+		
+	nav {clear:both;padding:20px 0 0 0;position:relative;}
+	nav ul.menu {margin:2px auto 0;width:400px;float:none;}
+	nav ul li a {padding:8px 22px 7px 22px;}
+		
+	ul.icons{float:right;font-size:1em;margin:15px 12px 0 0;padding:2px 0 2px 15px;}
+	ul.icons li a{}
+	
+	.port .header h5 {font-size: 1em;}
+	
+	hr{margin:0.3em 0 0.4em;}	
+			
+	/* portfolio detail */
+    .detail {height: auto;width:100%;}    
+    .detail .side {padding: 30px 5px 0 5px;width: auto;float:none;}        
+	.detail .heroimages {margin:10px 0 0 0;height:520px;width: auto;float:none;} 
+	    .headimage {left: 0px;top: 0px;width:95%;}    
+		.iphone {top: 200px;width: 180px;	}
+	.detail .auximages{margin:0;width: auto;float:none;}
+    /* .headimage, .iphone { display: none; visibility: hidden; } */
+    .detail .side h3 { font-size: 1.4em !important; }    
+    .detail .side h3 { position: absolute; top: 35px;line-height: 1em;}  
+	.half{width:100%;margin-right:0px;margin-top:0px;padding-right:5px;padding-left:5px;}	
+	
+
+}
+@media only screen and (max-width: 479px) {
+ body {font-size:1em;}
+
+
+	 .wrap{min-width:320px;max-width:380px;}
+	
+	#logo a {font-size:2em;margin:5px 0 0 5px;float:left;}
+		#logo h5 {font-size:0.75em;top:38px;left:10px;}
+		
+	nav {clear:both;padding:20px 0 0 0;position:relative;font-size:0.95em;}
+	nav ul.menu {margin:0 auto;width:320px;float:none;}
+	nav ul li a {padding:8px 16px 7px 16px;margin:0 4px 0 4px;}
+		nav ul li:first-child a {margin-left:0;}
+		nav ul li:last-child a {margin-right:0;}		
+	ul.icons{padding:0 0 0 5px;float:right;margin:18px 5px 0 0;}
+	ul.icons li a{padding:2px 1px 0;}
+	footer {width: 100%;}
+	.portfolio{padding:0;}
+	.port {width:100%;margin:0 auto 15px auto;float:none;min-width:300px;max-width:380px;}	
+ 		.port img{width:100%;}
+	.port .header h5 {font-size: 1.1em;}
+	
+		/* portfolio detail */
+    .detail {min-width:310px;max-width:380px;}        
+	.detail .heroimages {height:290px;} 
+	    .headimage {width: 320px;}    
+		.iphone {top: 140px;width: 100px;}
+
+	label{text-align:left;}
+	input, textarea { width: 95%;font-size:16px;}
+	input[type=button], input[type=submit],.submit{
+		margin:10px 0 20px 0;
+	}
+
+	p.lge{margin:0.2em 0 -0.4em;font-size:3.3em}
+	
+	.graph{height:130px;margin:240px 0 10px;}
+	
+	.cform label{width:100%;display:block;margin: 0.4em 0 0 0;font-size:1.1em;text-align:left;}
+	.cform input,.cform textarea{width: 100%;}
+	.cform button{margin-left:0;}
+	/*body {font-size:0.95em; }
+	.wrap{width:320px;}		
+	nav ul.menu {margin-right:5px;}
+	nav ul li a {padding:8px 16px 7px 16px;margin:2px 2px 0 2px;}
+	
+	.detail {width: 310px;}  
+		    .headimage {left: 0px;top: 0px;width: 300px;}    
+		.iphone {top: 120px;width: 100px;	}
+	#logo a {}
+		#logo h5 {}
+			input, textarea{width:92%;}
+	 .port {width:308px;}	*/
+}
+
+
+/*--[ PRINT STYLES ]--------------------------------------------------------------------------------*/
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none; letter-spacing: 0 !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; } 
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }  
+  img { page-break-inside: avoid; } 
+  @page { margin: 0.5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }  
+  header,footer,nav{display: none; }    
+  .main { overflow: visible; }
+  .wrap { width: 100%; margin: 0; }
+ 	.port {width: 300px;}  
+  .port { font-size: 0.8em; height: auto; margin-bottom: 10px; }
+  .port p { display: none; }  
+  .port .header { padding: 0; height: auto; position: relative; }
+  .port a:after { content: ""; }  
+   .detail { width: 100%; height: auto; float: left; }    
+    .detail  img, .detail  div { position: relative; }
+    .iphone, .headimage{ display: none !important; }
+}

@@ -1,28 +1,26 @@
-<!DOCTYPE html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!DOCTYPE html>
+<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!--[if lt IE 8]>      <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="description" content="Portfolio of Stuart McPherson">
-<!-- InstanceBeginEditable name="doctitle" -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Portfolio of Stuart McPherson">
+        <!-- InstanceBeginEditable name="doctitle" -->
 <title>Portfolio of Stuart McPherson</title>
 <!-- InstanceEndEditable -->
-<meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;">
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<link href="css/zgo8syp-d.css" rel="stylesheet">
-<link href="css/fdb0guo-d.css" rel="stylesheet">
-<?php include "lessphp-call.php" ?>
-<!--<link rel="stylesheet/less" type="text/css" href="css/style.less">-->
-<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-<!--<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>-->
-
-<!-- InstanceBeginEditable name="head" -->
+        <meta name="viewport" content="width=device-width">
+                
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link href="css/sjmcpherson.css" rel="stylesheet">
+        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
- </head>
+     </head>
 <body>
+        <!--[if lte IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
 <header>
 <div class="wrap">
 <div id="logo">
@@ -85,12 +83,11 @@
   </section>
 </footer>		
   
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->   
-<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <!--[if lt IE 9]>
 ><script type="text/javascript" src="js/selectivizr-min.js?ver=1.0.2"></script>
 <![endif]-->
-<!--<script src="js/less-1.3.1.min.js"></script>-->
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/fdb0guo.js"></script>
 <script src="js/zgo8syp.js"></script>

@@ -13,8 +13,7 @@ $(function(){
 			email: 'You have not entered a valid email address for the field: ',
 			minlength: ' must be greater than '
 		}
-		
-
+	
 	//feature detection + polyfills
 	formElements.each(function(){
 
@@ -103,7 +102,7 @@ $(function(){
 				 	if( !emailRegEx.test(value) ){	
 						this.focus();
 						formok = false;
-						errors.push(errorMessages.email + "<strong>"+nameUC+"</strong>");
+						errors.push(errorMessages.email + nameUC);
 						return false;
 					}
 				}
@@ -121,7 +120,19 @@ $(function(){
 		});
 		
 		//if form is not valid
-		if(!formok){		
+		if(!formok){
+			
+			//animate required field notice
+			$('#req-field-desc')
+				.stop()
+				.animate({
+					marginLeft: '+=' + 5
+				},150,function(){
+					$(this).animate({
+						marginLeft: '-=' + 5
+					},150);
+				});
+			
 			//show error message 
 			showNotice('error',errors);
 			
@@ -157,7 +168,7 @@ $(function(){
 			for(x in data){
 				errorNotice.append('<li>'+data[x]+'</li>');	
 			}
-			errorNotice.fadeIn('slow');
+			errorNotice.show();
 		}
 		else {
 			errorNotice.hide();

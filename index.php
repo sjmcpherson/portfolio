@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+﻿<!DOCTYPE html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
@@ -47,7 +47,7 @@
 <!-- InstanceBeginEditable name="content" -->
 <a name="portfolio" id="portfolio"></a>
             	<p class="lge">Welcome,</p> 
-                <h2>My name is Stuart I design and build websites that are a pleasure to use....</h2>          
+                <h2>My name is Stuart I design and build websites & web apps that are a pleasure to use....</h2>          
 
                 
 <div id="portlinks" class="portfolio">

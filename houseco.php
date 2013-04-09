@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!--[if lt IE 8]>      <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
@@ -90,7 +89,7 @@
 </footer>		
   
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
 <!--[if lt IE 9]>
 ><script type="text/javascript" src="js/selectivizr-min.js?ver=1.0.2"></script>
 <![endif]-->
@@ -99,7 +98,6 @@
 <script src="js/zgo8syp.js"></script>
 <script src="js/jquery-scroll-link.js"></script>
 <script src="js/jquery-box-fader.js"></script>
-
 <script src="js/script.js"></script>     
 <script src="js/controller.js"></script>  
         <script>

@@ -52,11 +52,11 @@
       	<h1>iCoach Rugby Statistics System</h1>  
 		<h2>iCoach Public Website &amp; Team Management Tool</h2>
         <hr class="light" />       
-        <p>Design &amp; javascript development for iCoach Rugby marketing site &amp; its team management tool. Overseeing the initial CSS/HTML production, before taking full responsibility of project from interfacing with client and providing estimates to javascript &amp; C#.NET development. </p> 
+        <p>Design &amp; JavaScript development for iCoach Rugby marketing site &amp; its team management tool. Overseeing the initial CSS/HTML production, before taking full responsibility of project from interfacing with client and providing estimates to JavaScript &amp; C#.NET development. </p> 
         <h5>Skills/Technologies Used</h5>
         <ul>
         <li>CSS/HTML</li>
-        <li>jQuery/Javascript</li>
+        <li>jQuery/JavaScript</li>
         <li>C#.NET</li>
         <li>Microsoft Azure</li>
         </ul>
@@ -64,11 +64,11 @@
         
         <h2>iCoach Rugby iCoach/Android App</h2>
         <hr class="light" />
-        <p>Designed &amp; developed the iCoach Rugby mobile app using the Javascript framework Titanium Appcelerator for iOS &amp; Android platforms. Interfacing with directors and testers for app updates.</p>
+        <p>Designed &amp; developed the iCoach Rugby mobile app using the JavaScript framework Titanium Appcelerator for iOS &amp; Android platforms. Interfacing with directors and testers for app updates.</p>
         <h5>Skills/Technologies Used</h5>       
         <ul>
         <li>Titanium Appcelertor</li>
-        <li>Javascript/AJAX</li>
+        <li>JavaScript/AJAX</li>
         <li>CommonJS</li>
         <li>REST</li>
         </ul> 
@@ -101,7 +101,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
 <!--[if lt IE 9]>
-><script type="text/javascript" src="js/selectivizr-min.js?ver=1.0.2"></script>
+<script src="js/selectivizr-min.js?ver=1.0.2"></script>
 <![endif]-->
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/fdb0guo.js"></script>

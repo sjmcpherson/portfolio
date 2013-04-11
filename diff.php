@@ -56,7 +56,7 @@
         <h5>Skills/Technologies Used</h5>       
         <ul>
         <li>CSS3/HTML5</li>
-        <li>jQuery/Javascript</li>
+        <li>jQuery/JavaScript</li>
         <li>SEO</li>       
         </ul>    
         <h4>Visit the Website <a target="_blank" class="hlink" href="http://www.thedifference.co.nz">www.thedifference.co.nz</a></h4>
@@ -86,7 +86,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
 <!--[if lt IE 9]>
-><script type="text/javascript" src="js/selectivizr-min.js?ver=1.0.2"></script>
+<script src="js/selectivizr-min.js?ver=1.0.2"></script>
 <![endif]-->
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/fdb0guo.js"></script>

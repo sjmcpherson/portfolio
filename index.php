@@ -135,7 +135,7 @@
              	<div class="breadcrumb"><h3>about me</h3></div>
 
                 <p class="lge">Hello,</p> 
-                <h2>I'm a Front-End Web Developer specializing in HTML5, CSS3 and Javascript</h2>      
+                <h2>I'm a Front-End Web Developer specializing in HTML5, CSS3 and JavaScript</h2>      
                 <div class="half technical">
                 <h3>Technical Skills</h3>
                 <hr class="light" />
@@ -163,7 +163,7 @@
                 <div class="cube four l3">
                     <div class="topFace"><div></div></div>
                     <div class="leftFace"></div>
-                    <div class="rightFace"><p>Javascript/AJAX</p></div>				
+                    <div class="rightFace"><p>JavaScript/AJAX</p></div>				
                 </div>
                 <div class="cube three l3">
                     <div class="topFace"><div></div></div>
@@ -189,7 +189,7 @@
                     <li class="step5">HTML/HTML5</li>
                     <li class="step5">CSS/CSS3</li>
                     <li class="step5">JQuery/JQuery Mobile</li>
-                    <li class="step4">Javascript/AJAX</li>
+                    <li class="step4">JavaScript/AJAX</li>
                     <li class="step4">Photoshop/Illustrator</li>
                     <li class="step3">Umbraco CMS</li>
                     <li class="step3">Titanium Appcelerator</li>  
@@ -203,7 +203,7 @@
            	<article class="half form home">
             <h3>Bio</h3>
 				<hr class="light" />
-                <p>Hi my name is Stuart McPherson my specialties are HTML5, CSS3 and Javascript, I love developing websites with a clean and inventive user experience. While I am no fully skilled back-end developer I do have experience in Server-side .NET &amp; PHP development and even once worked as a Graphic Designer.</p>                        
+                <p>Hi my name is Stuart McPherson my specialties are HTML5, CSS3 and JavaScript, I love developing websites with a clean and inventive user experience. While I am no fully skilled back-end developer I do have experience in Server-side .NET &amp; PHP development and even once worked as a Graphic Designer.</p>                        
                 <p>After obtaining a Bachelor of Information Systems back in 2002, I worked developing sites in .NET before deciding to focus on UI &amp; Design. I went on to complete a Diploma in Digital Media at Media Design School, in the process receiving industry awards in both Design &amp; Development for my work.</p>                
                 <p>I have a keen eye for aesthetics &amp; usability something that shows in my work and also enjoy to researching to keep up with the latest methods &amp; technologies.</p>
                 <p>When I'm not crafting websites, I can be found on a found on a football ground or hiking in the wilderness.</p>            
@@ -263,7 +263,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
 <!--[if lt IE 9]>
-><script type="text/javascript" src="js/selectivizr-min.js?ver=1.0.2"></script>
+<script src="js/selectivizr-min.js?ver=1.0.2"></script>
 <![endif]-->
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/fdb0guo.js"></script>

@@ -13,28 +13,26 @@
 /* LESS Mixins */
 
 .border-radius(@radius: 6px) { 
-  -webkit-border-radius : @radius;
-  -moz-border-radius: @radius;
-  -khtml-border-radius: @radius;
-  -o-border-radius: @radius;
-  border-radius: @radius;  
-  -moz-background-clip: padding; 
-  -webkit-background-clip: padding-box; 
-  background-clip: padding-box;
+-webkit-border-radius:@radius;
+   -moz-border-radius:@radius;
+        border-radius:@radius;
+-webkit-background-clip:padding-box;
+        background-clip:padding-box;
 }
 
 
 .transition-duration(@duration: 0.2s) {
-            transition-duration: @duration;
-	-webkit-transition-duration: @duration;
-       -moz-transition-duration: @duration;
+-webkit-transition-duration:@duration;
+   -moz-transition-duration:@duration;
+     -o-transition-duration:@duration;
+        transition-duration:@duration;
 }
 
 
 .drop-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
-	        box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
-	-webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
-	   -moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+-webkit-box-shadow:@x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+   -moz-box-shadow:@x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+        box-shadow:@x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
 }
 
 .rounded-table(@table_radius: 3px) {
@@ -73,21 +71,19 @@ filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Col
     box-sizing: border-box; 
 }
 .transition (@properties: all 1s linear) {
-    -webkit-transition: @properties;
-    -moz-transition: @properties;
-    -ms-transition: @properties;	
-    -o-transition: @properties;
-    transition: @properties;
+	-webkit-transition:@properties;
+	   -moz-transition:@properties;
+		 -o-transition:@properties;
+			transition:@properties;
 }
 
-
-.transform-transition (@time: 1s, @ease: linear) {
-    -webkit-transition: -webkit-transform @time @ease;
-    -moz-transition: -moz-transform @time @ease;
-    -o-transition: -o-transform @time @ease;
-    -ms-transition: -ms-transform @time @ease;
-    transition: transform @time @ease;
+.transform-transition (@time: 1s, @ease: linear){
+	-webkit-transition:-webkit-transform @time @ease;
+	   -moz-transition:   -moz-transform @time @ease;
+		 -o-transition:     -o-transform @time @ease;
+			transition:        transform @time @ease;
 }
+
 .filter(@value){
 	-webkit-filter: @value;
 	/*filter: @value; Doesn't look good in <IE9 */ 
@@ -107,11 +103,11 @@ filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Col
 	-webkit-box-shadow: @val;  	
 }
 .transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
-    -webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
-    -moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
-    -o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
-    -ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
-    transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+-webkit-transform:rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+   -moz-transform:rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -ms-transform:rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+     -o-transform:rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+        transform:rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
 }
 .gradient ( @start: #ffffff, @stop: #000000,@origin: top) {
     background-color: @start;
@@ -126,28 +122,28 @@ filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Col
 // Transformations //
 .skew(@angle_x:35deg, @angle_y:0deg)
 {
-	-webkit-transform: skew(@angle_x, @angle_y);
-	-moz-transform: skew(@angle_x, @angle_y);
-	-o-transform: skew(@angle_x, @angle_y);
-	-ms-transform: skew(@angle_x, @angle_y);
-	transform: skew(@angle_x, @angle_y);
+-webkit-transform:skew(@angle_x, @angle_y);
+   -moz-transform:skew(@angle_x, @angle_y);
+    -ms-transform:skew(@angle_x, @angle_y);
+     -o-transform:skew(@angle_x, @angle_y);
+        transform:skew(@angle_x, @angle_y);
 }
 
 .scale(@scale_x: 1)
 {
-	-webkit-transform: scale(@scale_x);
-	-moz-transform: scale(@scale_x);
-	-o-transform: scale(@scale_x);
-	-ms-transform: scale(@scale_x);
-	transform: scale(@scale_x);
+-webkit-transform:scale(@scale_x);
+   -moz-transform:scale(@scale_x);
+    -ms-transform:scale(@scale_x);
+     -o-transform:scale(@scale_x);
+        transform:scale(@scale_x);
 }
 .rotate(@deg:35deg)
 {
-	-webkit-transform: rotate(@deg);
-	-moz-transform: rotate(@deg);
-	-o-transform: rotate(@deg);
-	-ms-transform: rotate(@deg);
-	transform: rotate(@deg);
+-webkit-transform:rotate(@deg);
+   -moz-transform:rotate(@deg);
+    -ms-transform:rotate(@deg);
+     -o-transform:rotate(@deg);
+        transform:rotate(@deg);
 }
 .translate(@move_x: 10px, @move_y: 10px)
 {

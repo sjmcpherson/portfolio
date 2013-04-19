@@ -104,8 +104,7 @@
 <script src="js/selectivizr-min.js?ver=1.0.2"></script>
 <![endif]-->
 <script src="js/jquery.easing.1.3.js"></script>
-<script src="js/fdb0guo.js"></script>
-<script src="js/zgo8syp.js"></script>
+<script src="js/gwfonts.js"></script>
 <script src="js/jquery-scroll-link.js"></script>
 <script src="js/jquery-box-fader.js"></script>
 <script src="js/script.js"></script>     

@@ -4,21 +4,39 @@ $(function(){
 			var nav = $('nav').first(),
 				navElements = nav.find('a'),
 				navHref = navElements.attr("href"),
-				bookmarks = $('a[name]');
-				console.log(bookmarks.length)
-				console.log(navElements.length)		
-			var curUrl = window.location.pathname;
-			var curFilename = curUrl.substring(curUrl.lastIndexOf('/')+1);	
-			
-		
+				bookmarks = $('a[name]'),
+				curUrl = window.location.pathname,
+				curFilename = curUrl.substring(curUrl.lastIndexOf('/')+1),
+				_rolledUp = false;			
+				
 				function bindScroll(){
 					$(window).scroll(function(e){
-						//bodyScroll();
-						checkSelected($(window).scrollTop());
+						console.log("scroll");
+						setScrollTimer();
+						var scrollPos = $(window).scrollTop();
+						checkSelected(scrollPos);
+						checkHeaderFixed(scrollPos);
 					});					
 				}
+				bindScroll();				
+							
+				function setScrollTimer(){
+					unbindScroll();
+					scrollTimer = window.setTimeout(function(){bindScroll()}, 200);
+				}
 				
-				bindScroll();
+	
+				function checkHeaderFixed(scrollPos) {	
+					//Masthead
+					if (scrollPos > 50 && !_rolledUp) {
+						$("header").addClass("fix");							
+						_rolledUp = true;
+					} else if (scrollPos < 50 && _rolledUp) {
+						$("header").removeClass("fix");
+						_rolledUp = false;
+					}			
+				}
+
 				
 				function unbindScroll(){
 					$(window).unbind("scroll");
@@ -57,23 +75,15 @@ $(function(){
 						}, 600,
 						"easeOutExpo", function()
 						{
-							bindScroll();
+							bindScroll();						
+							checkHeaderFixed($(window).scrollTop());
 						});
 						return false; 
 					}		 
 						
 				})			
 								
-				  function bodyScroll() {			
-						if (scrollTimer != -1)
-							clearTimeout(scrollTimer);
-				
-						scrollTimer = window.setTimeout("scrollFinished()", 500);
-				  }
-				
-					function scrollFinished() {
-							checkSelected($(window).scrollTop())
-					}
+
 				// Go through each section to see if it's at the top.
 				// if it is add an active class
 				function checkSelected(scrolledTo){					

@@ -1,24 +1,36 @@
+//Todo Add javascript fallback via Modernizr if(Modernizr.csstransforms && Modernizr.csstransitions){} 
+
 (function($){
 	$.fn.boxFader = function() {	
 					var container = this,
 						$children = container.children(),
-						timeout	;
+						timeout;
 					
-					container.on('mouseenter','article', function( event ) {						
-						var $child = $(this);
-						clearTimeout(timeout);
-						timeout = setTimeout( function() {						
-							if( $child.hasClass('active') ) return false;						
-							$children.not( $child.removeClass('blur').addClass('active') )
-									 .removeClass('active')
-									 .addClass('blur');						
-						}, 50 );					
+
+					container.on('mouseenter','article', function( event ) {	
+
+							var $child = $(this);					
+							if( $child.hasClass('active') ) return false;				
+							if(Modernizr.csstransitions){ 		
+								$children.not( $child.removeClass('blur').addClass('active') )
+									.removeClass('active')
+									.addClass('blur')	
+							}else{
+									$children.not( $child.addClass('active').fadeTo('fast', 1, function() {}) )
+									.removeClass('active')
+									.fadeTo('fast', 0.5, function() {});	
+							}
+										 
 					}).on('click','article', function( event ) {	
 							var href = $(this).find('a').attr('href');
 							window.location = href;
 					}).on( 'mouseleave', function( event ) {					
-							clearTimeout( timeout );
-							$children.removeClass('active blur');						
+							if(Modernizr.csstransitions){
+								$children.removeClass('active blur')
+							}else{	
+								$children.removeClass('active blur')								
+								.fadeTo('fast', 1, function() {});		
+							}
 					});
 					
 					return this

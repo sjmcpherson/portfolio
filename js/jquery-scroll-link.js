@@ -48,7 +48,7 @@ $(function(){
 					var elementClick = elem.attr("href");
 					var goClick = elementClick.substring(elementClick.lastIndexOf('#'));
 					//Height of the navigation
-					var offset = 0;
+					var offset = 54;
 		
 					//Gets the distance from the top and 
 					//subtracts the height of the nav.
@@ -91,6 +91,7 @@ $(function(){
 					var threshold = 300;
 		
 					var scrollTop = 0;
+					
 					for (var i = 0; i < navElements.length; i++) {
 						
 						//get next nav item

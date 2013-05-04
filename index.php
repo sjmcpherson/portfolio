@@ -116,17 +116,7 @@
                             <h5><a href="dave.php">Dave Van Rijk E-Commerce Site</a></h5>
                         </div>
                     </article>
-                   <article class="port other">
-                   		<h3>Others sites I have contributed to</h3>
-						<ul>
-                        	<li><a target="_blank" href="http://www.torpedo7.com">www.torpedo7.co.nz</a></li>
-                         	<li><a target="_blank" href="http://www.1-day.co.nz">www.1-day.co.nz</a></li>
-                            <li><a target="_blank" href="http://www.avantiplus.co.nz">www.avantiplus.co.nz</a></li>
-                            <li><a target="_blank" href="http://www.shoeconnection.co.nz">www.shoeconnection.co.nz</a></li>
-                            <li><a target="_blank" href="http://www.usplus.com">www.usplus.com</a></li>
-                       
-                        </ul>
-                    </article>   
+  
                 </div>
            
 </section>               

@@ -1,6 +1,4 @@
-.wf-loading {
-	& h1,& h2,& h3,& h4,& h5,& p {visibility:hidden;}
-}
+.wf-loading * {.opacity(0);}
 
 ::-moz-selection {text-shadow: none;background-color:#333;color:#fff;}
 ::selection {text-shadow: none;background-color:#333;color:#fff;}
@@ -40,12 +38,12 @@ header{background:rgba(0,0,0,0.85);width: 100%;height:100px;position: fixed;top:
 	header.fix{height:54px;}
 		header.fix .wrap{top:0;}
 
-#logo{width:auto;}
-	#logo a {float:left;color:#fff;font-weight:800;margin:0;.logofont;background-image: -webkit-linear-gradient(top,#ffffff, #d0d0d0);-webkit-background-clip: text;-webkit-text-fill-color: transparent;text-shadow:none;padding:0 3px 0 0;border:none;.transition(all 0.3s ease);}
-	header.fix #logo a {margin-top:7px;}
-	#logo a:hover{text-shadow:0px 0px 15px #fff;}
-	#logo h5{position:absolute;top:38px;left:2px;color:#666;font-size:0.8em;line-height:1em;margin:0px;text-shadow: -1px -1px 0 #000;text-transform:uppercase;.transition(all 0.3s ease);}
-	header.fix #logo h5 {.opacity(0);}
+.logo{display:inline;}
+	.logo a {float:left;color:#fff;font-weight:800;margin:0;.logofont;background-image: -webkit-linear-gradient(top,#ffffff, #d0d0d0);-webkit-background-clip: text;-webkit-text-fill-color: transparent;text-shadow:none;padding:0 3px 0 0;border:none;.transition(all 0.3s ease);}
+	header.fix .logo a {margin-top:7px;}
+	.logo a:hover{text-shadow:0px 0px 15px #fff;}
+	.logo h5{position:absolute;top:38px;left:2px;color:#666;font-size:0.8em;line-height:1em;margin:0px;text-shadow: -1px -1px 0 #000;text-transform:uppercase;.transition(all 0.3s ease);}
+	header.fix .logo h5 {.opacity(0);}
 
 /*--[ Nav ]--------------------------------------------------------------------------------*/
 
@@ -67,7 +65,7 @@ nav a:hover,ul.icons li a:hover,button:hover{ /*border-bottom: 1px solid #989898
 /*--[ Portfolio ]--------------------------------------------------------------------------------*/
 
 .portfolio{padding:30px 0 10px 0;clear:both;display:table;}
-.port {cursor:pointer;.border-radius(0 0 8px 8px);border:1px solid #ccc;.box-shadow(0px,2px,5px,0.2);float:left;margin:14px;position: relative;height: 100%;.transition(all 0.3s linear);.opacity(1);
+.port {cursor:pointer;.border-radius(0 0 8px 8px);border:1px solid #ccc;.box-shadow(0px,2px,5px,0.2);float:left;margin:13px;position: relative;height: 100%;.transition(all 0.3s linear);.opacity(1);
 	img{border-bottom:2px solid #fff;width:374px;}	
 	&.blur{.scale(0.96);.opacity(0.4);text-shadow: 0px 0px 10px rgba(255, 210, 82, 0.9);.filter(blur(5px));}	
 	&.active{.box-shadow(0px,5px,15px,0.4);z-index: 100;.opacity(1);}
@@ -80,6 +78,7 @@ nav a:hover,ul.icons li a:hover,button:hover{ /*border-bottom: 1px solid #989898
 			.header h5 a,.header h5 a:hover {color: #aaa;text-shadow:none;}	
 	&:active{.opacity(.8);}
 }
+.lt-ie9 .port{margin:13px;}
 
 /*--[ Portfolio Detail ]--------------------------------------------------------------------------------*/
 
@@ -221,6 +220,4 @@ footer {overflow: hidden;zoom: 1;clear: both;padding: 60px 0 0;text-align:center
 
 /* IE6 + 7 warning */
 
-#ieWarning {background: #F6F6F6;border-bottom:1px solid #CCC;padding: 20px 0 0;	overflow: hidden;width:100%;zoom:1;}
-#ieWarning p {line-height: 16px;margin: 0;padding: 0 20px 5px 20px;}
-#ieWarning .more-info {float: right;margin: 20px;padding: 5px;background: #989898;color: #FFF;white-space: nowrap;zoom:1;}
+p.ieWarning {position:absolute;left:0;z-index:9999;margin:54px 0 0 0;background-color: #ff0000;color: #FFF;white-space: nowrap;zoom:1;border-bottom:1px solid #CCC;overflow: hidden;width:100%;zoom:1;line-height: 16px;padding:20px 0 20px;text-align:center;}

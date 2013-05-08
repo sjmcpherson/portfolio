@@ -1,28 +1,28 @@
-<!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --><!--[if lt IE 8]>      <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if (lt IE 8)]>      <html class="no-js lt-ie9 lt-ie8 wf-loading"> <![endif]-->
+<!--[if (IE 8)]>         <html class="no-js lt-ie9 wf-loading"> <![endif]-->
+<!--[if (gt IE 8)]><!--> <html class="no-js wf-loading"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]-->
     <head>
+    	<script type="text/javascript">WebFontConfig = {typekit: { id:'xwt5ilg' }};(function() {var wf = document.createElement('script');wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';wf.type = 'text/javascript';wf.async = 'true';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(wf, s);})();</script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="description" content="Portfolio of Stuart McPherson">
         <!-- InstanceBeginEditable name="doctitle" -->
 <title>Portfolio of Stuart McPherson</title>
 <!-- InstanceEndEditable -->
-        <meta name="viewport" content="width=device-width">
-                
+        <meta name="viewport" content="width=device-width">                
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <link href="css/sjmcpherson.css" rel="stylesheet">
         <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- InstanceEndEditable -->        
      </head>
+     
 <body>
-        <!--[if lte IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+<!--[if lte IE 7]><p class="ieWarning">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
 <header>
 <div class="wrap">
-<div id="logo">
+<div class="logo">
 		<a href="/">Stuart McPherson</a>
 		<h5>Front End Web Developer</h5>
 </div>			
@@ -83,11 +83,8 @@
   
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-<!--[if lt IE 9]>
-<script src="js/selectivizr-min.js?ver=1.0.2"></script>
-<![endif]-->
+<!--[if lt IE 9]><script src="js/selectivizr-min.js?ver=1.0.2"></script><![endif]-->
 <script src="js/jquery.easing.1.3.js"></script>
-<script src="js/gwfonts.js"></script>
 <script src="js/jquery-scroll-link.js"></script>
 <script src="js/jquery-box-fader.js"></script>
 <script src="js/script.js"></script>     

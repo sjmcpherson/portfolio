@@ -14,7 +14,9 @@ $(function(){
 					$(window).scroll(function(e){
 						setScrollTimer();
 						var scrollPos = $(window).scrollTop();
-						checkSelected(scrollPos);
+						if(curFilename == "index.php" || curFilename == ""){
+							checkSelected(scrollPos);
+						}
 						checkHeaderFixed(scrollPos);
 					});					
 				}
@@ -34,7 +36,6 @@ $(function(){
 				//Toggles Between Header States
 				function checkHeaderFixed(scrollPos) {	
 					//Masthead
-					console.log(scrollPos);
 					if (scrollPos > 60 && !rolledUp) {
 						$("header").addClass("fix");							
 						rolledUp = true;

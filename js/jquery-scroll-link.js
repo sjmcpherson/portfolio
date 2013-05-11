@@ -7,20 +7,28 @@ $(function(){
 				bookmarks = $('a[name]'),
 				curUrl = window.location.pathname,
 				curFilename = curUrl.substring(curUrl.lastIndexOf('/')+1),
+				navOffset = 54,//nav.height();	
+				selectedClass = "current";
 				rolledUp = false;			
 				
 				//Binds Scroll Event to Browser Window
 				function bindScroll(){
 					$(window).scroll(function(e){
 						setScrollTimer();
+						doStatusChecks();
+					});					
+				}
+				bindScroll();		
+							
+				function doStatusChecks(){
 						var scrollPos = $(window).scrollTop();
 						if(curFilename == "index.php" || curFilename == ""){
 							checkSelected(scrollPos);
 						}
 						checkHeaderFixed(scrollPos);
-					});					
 				}
-				bindScroll();				
+						
+				doStatusChecks();
 							
 				//Sets Timeout to limit the amount of Scroll Events taking place to improve performance			
 				function setScrollTimer(){
@@ -52,11 +60,9 @@ $(function(){
 					var elementClick = elem.attr("href");
 					var goClick = elementClick.substring(elementClick.lastIndexOf('#'));
 					
-					//Height of the navigation
-					var offset = 54;		
 					//Gets the distance from the top and 
 					//subtracts the height of the nav.
-					return $(goClick).offset().top - offset;
+					return $(goClick).offset().top - navOffset;
 				}
 
 		
@@ -64,9 +70,9 @@ $(function(){
 				navElements.click(function () {	
 					$(window).unbind("scroll");
 					var li = $(this).closest("li");
-					navElements.removeClass("current");		
+					navElements.removeClass(selectedClass);		
 					//Add current selected element.
-					$(this).addClass("current");
+					$(this).addClass(selectedClass);
 					var destination = 0;
 		
 					if(curFilename == "index.php" || curFilename == ""){
@@ -102,9 +108,9 @@ $(function(){
 						//Check if section is at the top of the page.
 						if (scrolledTo > scrollTop - threshold && scrolledTo < scrollTop + threshold) {		
 							//Remove all selected elements
-							navElements.removeClass("current");		
+							navElements.removeClass(selectedClass);		
 							//Add current selected element.
-							navElement.addClass("current");
+							navElement.addClass(selectedClass);
 						}else{
 						
 						}

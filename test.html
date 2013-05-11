@@ -35,6 +35,39 @@ background-image: -o-linear-gradient(180deg, #A9D4CC, #000000);
 background-image: linear-gradient(180deg, #A9D4CC, #000000);
 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#7DB4B3', endColorstr='#A9D4CC')";
 height: 55px;}
+
+ul{
+  padding:30px 0 10px 0;
+  display:table;
+  list-style:none;  
+}
+li{
+  cursor:pointer;
+  box-shadow:0 2px 5px rgba(0,0,0,0.2);
+  float:left;
+  margin:5px;
+  width:165px;
+  height:125px;
+  opacity:1;
+  -moz-transition:all .3s linear;  
+  transition:all .3s linear;
+}
+ul:hover li{
+  -moz-transform:scale(0.98);    
+  -webkit-transform:scale(0.98);  
+  transform:scale(0.98);
+  opacity:.4;
+  -webkit-filter:blur(5px)
+}
+ul li:hover{
+  box-shadow:0 5px 15px rgba(0,0,0,0.4);
+  opacity:1;
+  -moz-transform:scale(1.08);  
+  -webkit-transform:scale(1.08); 
+  transform:scale(1.08);
+  -webkit-filter:blur(0)
+}
+
 </style>
 
 <body>
@@ -42,5 +75,20 @@ height: 55px;}
 <h3>h33 234</h3>
 <p>sdfsdfsfsf adfadsf</p>
 <div id="PageTitleBox"></div>
+
+<ul>
+  <li>
+    <a href="http://www.sjmcpherson.com/"><img src="http://sjmcpherson.com/codepen/tree1.png" alt="" /></a></li>
+  <li>
+    <a href="http://www.sjmcpherson.com/"><img src="http://sjmcpherson.com/codepen/tree1.png" alt="" /></a></li>
+  <li>
+    <a href="http://www.sjmcpherson.com/"><img src="http://sjmcpherson.com/codepen/tree1.png" alt="" /></a></li>
+  <li>
+    <a href="http://www.sjmcpherson.com/"><img src="http://sjmcpherson.com/codepen/tree1.png" alt="" /></a></li>
+  <li>
+    <a href="http://www.sjmcpherson.com/"><img src="http://sjmcpherson.com/codepen/tree1.png" alt="" /></a></li>
+  <li>
+    <a href="http://www.sjmcpherson.com/"><img src="http://sjmcpherson.com/codepen/tree1.png" alt="" /></a></li>
+</ul>
 </body>
 </html>

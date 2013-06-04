@@ -51,7 +51,7 @@ nav {position: absolute;bottom:5px;/* right: 40px;*/right: 0;}
 	nav ul {float:right;margin:0 0 0;}
 	nav ul li{float:left;position:relative;}
 		nav ul li a {border:none;display: block;padding:10px 1.2em;margin:0 8px;color: #ccc;.border-radius();border:1px solid #000;text-decoration: none;line-height:1em;font-weight: 400;font-size:1.15em;.box-shadow(inset 0 1px 2px  rgba(255,255,255,.1), 0 2px 3px rgba(0,0,0,.8));cursor:pointer;background-color:rgba(100,100,100,0.1);}
-			nav ul li a:hover {.box-shadow(inset 0 1px 1px  rgba(255,255,255,.2), 0 0 5px rgba(0,0,0,.1));color:#fff;background-color:rgba(200,200,200,0.1);}
+			nav ul li a:hover {.box-shadow(inset 0 1px 1px  rgba(255,255,255,.15), 0 0 5px rgba(0,0,0,.1));color:#fff;background-color:rgba(200,200,200,0.12);}
 			nav ul li a:active,nav ul li a.current {.box-shadow(inset 0 1px 1px  rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.2));color:#aaa;text-shadow:0px 0px 0px #000;background-color:rgba(0,0,0,0.2);}
 
 ul.icons {padding:1px 5px 0 15px;float:left;margin:13px 0 0 22px;border-left:1px solid #222;.box-shadow(1px 0 0px rgba(255,255,255,.1) inset);}
@@ -65,10 +65,10 @@ nav a:hover,ul.icons li a:hover,button:hover{ /*border-bottom: 1px solid #989898
 /*--[ Portfolio ]--------------------------------------------------------------------------------*/
 
 .portfolio{padding:30px 0 10px 0;clear:both;display:table;}
-.port {cursor:pointer;.border-radius(0 0 8px 8px);border:1px solid #ccc;.box-shadow(0px,2px,5px,0.2);float:left;margin:13px;position: relative;height: 100%;.transition(all 0.3s linear);.opacity(1);
+.port {cursor:pointer;.border-radius(0 0 8px 8px);border:1px solid #ccc;.box-shadow(0px,2px,5px,0.15);float:left;margin:13px;position: relative;height: 100%;.transition(all 0.3s linear);.opacity(1);
 	img{border-bottom:2px solid #fff;width:374px;}	
 	&.blur{.scale(0.96);.opacity(0.4);text-shadow: 0px 0px 10px rgba(255, 210, 82, 0.9);.filter(blur(5px));}	
-	&.active{.box-shadow(0px,5px,15px,0.4);z-index: 100;.opacity(1);}
+	&.active{.box-shadow(0px,5px,15px,0.3);z-index: 100;.opacity(1);}
 		&.active .header h4:before{color:#eee;text-shadow:0 0 6px #eee;}
 	.header:before {.shine;}
 	.header {.border-radius(0 0 8px 8px);position:relative;width:100%;height: 54px;background:rgba(0, 0, 0, 0.80);text-shadow: -1px -1px 0 #000;background:url(../img/bg-dark.png) #333;padding:0 1px 0 4%;}
@@ -133,7 +133,7 @@ input:focus, textarea:focus{border-color:#111;.transition(border-color 0.4s ease
 button:before {.shine;}
 button {display: inline-block;padding:1em 2em;margin:8px 0 20px 0;color: #aaa;.border-radius;border:1px solid #000;text-decoration: none;line-height:1em;font-weight: normal;font-size:1em;.box-shadow(inset 0 1px 1px  rgba(255,255,255,.2), 0 2px 3px rgba(0,0,0,.8));cursor:pointer;background:rgba(0,0,0,0.85);text-shadow: -1px -1px 0 #000;background:url(../img/bg-dark.png) #333;.transition(color 0.3s ease);position:relative;}
 	button:hover {.opacity(0.9);color: #fff;text-shadow:0 0 6px;}
-	button:active {.box-shadow(inset 0 1px 1px  rgba(0,0,0,.3), 0 0 2px rgba(0,0,0,.1));.opacity(1);top:1px;}
+	button:active {.box-shadow(inset 0 1px 1px  rgba(0,0,0,.2), 0 0 2px rgba(0,0,0,.1));.opacity(1);top:1px;}
 .cform button{margin-left:28%;}
 
 
